@@ -99,7 +99,7 @@ def about(request):
                 <div class="container text-center my-5">
                   <div class="row">
                     <div class="col-lg-6 col-md-8 mx-auto">
-                      <img class="rounded-img" src="../img/me.jpg" alt="Тут должно быть мое фото"/>
+                      <img class="rounded-img" src="./img/me.jpg" alt="Тут должно быть мое фото"/>
                       <h1 class="fw-light">Меня зовут Елизавета</h1>
                       <p class="lead text-muted">
                         Я - начинающий разработчик на языке Python
