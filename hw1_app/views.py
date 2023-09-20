@@ -74,7 +74,7 @@ def about(request):
                   content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, 
                   minimum-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>Главная</title>
+            <title>Обо мне</title>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
                   rel="stylesheet"
                   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
@@ -104,7 +104,7 @@ def about(request):
                 <div class="container text-center my-5">
                   <div class="row">
                     <div class="col-lg-6 col-md-8 mx-auto">
-                      <img class="rounded-img" src="./img/me.jpg" alt="Тут должно быть мое фото"/>
+                      <img class="rounded-img" src="/img/me.jpg" alt="Тут должно быть мое фото"/>
                       <h1 class="fw-light">Меня зовут Елизавета</h1>
                       <p class="lead text-muted">
                         Я - начинающий разработчик на языке Python
