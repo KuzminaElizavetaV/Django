@@ -193,3 +193,43 @@ INFO 2023-09-20 17:27:43,130 basehttp 15920 12968 "GET / HTTP/1.1" 200 2144
 INFO 2023-09-20 17:28:29,415 basehttp 15920 12968 "GET / HTTP/1.1" 200 2144
 INFO 2023-09-20 17:29:45,408 autoreload 15920 13380 D:\DjangoProject\homework_project\hw1_app\views.py changed, reloading.
 INFO 2023-09-20 17:29:45,848 autoreload 15148 13976 Watching for file changes with StatReloader
+INFO 2023-09-20 21:59:30,593 autoreload 6844 14384 Watching for file changes with StatReloader
+INFO 2023-09-20 21:59:34,781 basehttp 6844 13640 "GET / HTTP/1.1" 200 2144
+WARNING 2023-09-20 21:59:34,920 log 6844 13640 Not Found: /favicon.ico
+WARNING 2023-09-20 21:59:34,921 basehttp 6844 13640 "GET /favicon.ico HTTP/1.1" 404 2448
+INFO 2023-09-20 21:59:43,155 basehttp 6844 4532 "GET /about/ HTTP/1.1" 200 2505
+WARNING 2023-09-20 21:59:43,259 log 6844 4532 Not Found: /img/me.jpg
+WARNING 2023-09-20 21:59:43,259 basehttp 6844 4532 "GET /img/me.jpg HTTP/1.1" 404 2445
+INFO 2023-09-20 22:00:00,046 basehttp 6844 4532 "GET / HTTP/1.1" 200 2144
+INFO 2023-09-20 22:04:59,232 autoreload 6844 14384 D:\DjangoProject\homework_project\hw1_app\views.py changed, reloading.
+INFO 2023-09-20 22:04:59,674 autoreload 10436 2316 Watching for file changes with StatReloader
+INFO 2023-09-20 22:05:08,718 basehttp 10436 16216 "GET / HTTP/1.1" 200 2134
+INFO 2023-09-20 22:05:21,514 basehttp 10436 16216 "GET /about/ HTTP/1.1" 200 2502
+WARNING 2023-09-20 22:05:21,535 log 10436 16216 Not Found: /img/me.jpg
+WARNING 2023-09-20 22:05:21,536 basehttp 10436 16216 "GET /img/me.jpg HTTP/1.1" 404 2445
+INFO 2023-09-20 22:05:30,370 basehttp 10436 16216 "GET / HTTP/1.1" 200 2134
+INFO 2023-09-20 22:05:48,041 basehttp 10436 16216 "GET /about/ HTTP/1.1" 200 2502
+WARNING 2023-09-20 22:05:48,059 log 10436 16216 Not Found: /img/me.jpg
+WARNING 2023-09-20 22:05:48,060 basehttp 10436 16216 "GET /img/me.jpg HTTP/1.1" 404 2445
+INFO 2023-09-20 22:06:23,722 basehttp 10436 16216 "GET /about/ HTTP/1.1" 200 2502
+WARNING 2023-09-20 22:06:23,744 log 10436 16216 Not Found: /img/me.jpg
+WARNING 2023-09-20 22:06:23,745 basehttp 10436 16216 "GET /img/me.jpg HTTP/1.1" 404 2445
+INFO 2023-09-20 22:10:11,268 basehttp 10436 16216 "GET / HTTP/1.1" 200 2134
+INFO 2023-09-20 22:14:18,260 autoreload 10436 2316 D:\DjangoProject\homework_project\hw1_app\views.py changed, reloading.
+INFO 2023-09-20 22:14:18,701 autoreload 3656 15064 Watching for file changes with StatReloader
+INFO 2023-09-20 22:16:46,238 autoreload 3656 15064 D:\DjangoProject\homework_project\hw1_app\views.py changed, reloading.
+INFO 2023-09-20 22:16:46,683 autoreload 13660 6100 Watching for file changes with StatReloader
+INFO 2023-09-20 22:16:58,433 basehttp 13660 11452 "GET / HTTP/1.1" 200 2030
+INFO 2023-09-20 22:17:37,278 autoreload 13660 6100 D:\DjangoProject\homework_project\hw1_app\views.py changed, reloading.
+INFO 2023-09-20 22:17:37,714 autoreload 3848 6896 Watching for file changes with StatReloader
+INFO 2023-09-20 22:17:47,711 basehttp 3848 7764 "GET / HTTP/1.1" 200 2030
+INFO 2023-09-20 22:18:04,340 basehttp 3848 7764 "GET /about/ HTTP/1.1" 200 2374
+WARNING 2023-09-20 22:18:04,365 log 3848 7764 Not Found: /img/me.jpg
+WARNING 2023-09-20 22:18:04,366 basehttp 3848 7764 "GET /img/me.jpg HTTP/1.1" 404 2445
+INFO 2023-09-20 22:18:12,470 basehttp 3848 7764 "GET / HTTP/1.1" 200 2030
+INFO 2023-09-20 22:20:41,164 autoreload 3848 6896 D:\DjangoProject\homework_project\hw1_app\views.py changed, reloading.
+INFO 2023-09-20 22:20:41,613 autoreload 14156 14076 Watching for file changes with StatReloader
+INFO 2023-09-20 22:20:48,982 basehttp 14156 10236 "GET / HTTP/1.1" 200 2131
+INFO 2023-09-20 22:21:01,875 basehttp 14156 10236 "GET /about/ HTTP/1.1" 200 2374
+WARNING 2023-09-20 22:21:01,900 log 14156 10236 Not Found: /img/me.jpg
+WARNING 2023-09-20 22:21:01,901 basehttp 14156 10236 "GET /img/me.jpg HTTP/1.1" 404 2445

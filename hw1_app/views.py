@@ -39,20 +39,15 @@ def index(request):
               <div class="row">
                 <div class="col-lg-6 col-md-8 mx-auto">
                   <h1 class="fw-light">Это мой первый Django сайт!</h1>
-                  <p class="lead text-muted">
-                    Первый проект с использованием фреймворка Django
-                  </p>
+                  <p class="lead text-muted">Мой первый проект с использованием фреймворка Django</p>
+                  <p class="lead text-muted">Мое первое домашнее задание</p>
                   <a href="https://github.com/KuzminaElizavetaV/Django" target="_blank" class="btn btn-primary">
                     GitHub
                   </a>
-                  <a href="/about/" target="_blank" class="btn btn-primary">
-                    Обо мне
-                  </a>
+                  <a href="/about/" class="btn btn-primary">Обо мне</a>
                 </div>
               </div>
             </div>
-        
-        <p></p>
     <div class="row fixed-bottom modal-footer">
         <hr>
         <p>Все права защищены &copy;</p>
@@ -104,19 +99,13 @@ def about(request):
                 <div class="container text-center my-5">
                   <div class="row">
                     <div class="col-lg-6 col-md-8 mx-auto">
-                      <img class="rounded-img" src="/img/me.jpg" alt="Тут должно быть мое фото"/>
+                      <img class="rounded-img" src="../img/me.jpg" alt="Тут должно быть мое фото"/>
                       <h1 class="fw-light">Меня зовут Елизавета</h1>
-                      <p class="lead text-muted">
-                        Я - начинающий разработчик на языке Python
-                      </p>
-                      <a href="/" target="_blank" class="btn btn-primary">
-                        Назад
-                      </a>
+                      <p class="lead text-muted">Я - начинающий разработчик на языке Python</p>
+                      <a href="/" class="btn btn-primary">Назад</a>
                     </div>
                   </div>
                 </div>
-
-            <p></p>
         <div class="row fixed-bottom modal-footer">
             <hr>
             <p>Все права защищены &copy;</p>
