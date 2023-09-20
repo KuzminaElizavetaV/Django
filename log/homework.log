@@ -176,3 +176,20 @@ WARNING 2023-09-20 17:24:46,483 basehttp 4308 1080 "GET /about/img/me.jpg HTTP/1
 INFO 2023-09-20 17:24:50,007 basehttp 4308 1080 "GET /about/ HTTP/1.1" 200 2507
 WARNING 2023-09-20 17:24:50,026 log 4308 1080 Not Found: /about/img/me.jpg
 WARNING 2023-09-20 17:24:50,027 basehttp 4308 1080 "GET /about/img/me.jpg HTTP/1.1" 404 2463
+INFO 2023-09-20 17:27:12,704 autoreload 8348 12024 Watching for file changes with StatReloader
+ERROR 2023-09-20 17:27:19,859 log 8348 6756 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: index() takes 0 positional arguments but 1 was given
+ERROR 2023-09-20 17:27:19,861 basehttp 8348 6756 "GET / HTTP/1.1" 500 61585
+INFO 2023-09-20 17:27:37,732 autoreload 8348 12024 D:\DjangoProject\homework_project\hw1_app\views.py changed, reloading.
+INFO 2023-09-20 17:27:38,186 autoreload 15920 13380 Watching for file changes with StatReloader
+INFO 2023-09-20 17:27:43,130 basehttp 15920 12968 "GET / HTTP/1.1" 200 2144
+INFO 2023-09-20 17:28:29,415 basehttp 15920 12968 "GET / HTTP/1.1" 200 2144
+INFO 2023-09-20 17:29:45,408 autoreload 15920 13380 D:\DjangoProject\homework_project\hw1_app\views.py changed, reloading.
+INFO 2023-09-20 17:29:45,848 autoreload 15148 13976 Watching for file changes with StatReloader
