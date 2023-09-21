@@ -55,7 +55,7 @@ def index(request):
     </div>
     </body>
     </html>'''
-    logger.info('Index page accessed')
+    logger.info(f'{request} => Index page accessed')
     return HttpResponse(html)
 
 
@@ -113,5 +113,5 @@ def about(request):
         </div>
         </body>
         </html>'''
-    logger.info('About page accessed')
+    logger.info(f'{request} => About page accessed')
     return HttpResponse(html)
