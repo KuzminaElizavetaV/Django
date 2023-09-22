@@ -286,3 +286,11 @@ WARNING 2023-09-21 09:41:29,073 log 13368 12472 Not Found: /about/img/me.jpg
 WARNING 2023-09-21 09:41:29,074 basehttp 13368 12472 "GET /about/img/me.jpg HTTP/1.1" 404 2463
 INFO 2023-09-21 09:43:36,741 autoreload 13368 3268 D:\DjangoProject\homework_project\hw1_app\views.py changed, reloading.
 INFO 2023-09-21 09:43:37,191 autoreload 16080 14688 Watching for file changes with StatReloader
+INFO 2023-09-22 15:13:17,174 autoreload 2968 836 Watching for file changes with StatReloader
+INFO 2023-09-22 15:13:24,229 basehttp 2968 9328 "GET / HTTP/1.1" 200 2131
+WARNING 2023-09-22 15:13:24,376 log 2968 9328 Not Found: /favicon.ico
+WARNING 2023-09-22 15:13:24,377 basehttp 2968 9328 "GET /favicon.ico HTTP/1.1" 404 2448
+INFO 2023-09-22 15:13:26,811 basehttp 2968 9328 "GET /about/ HTTP/1.1" 200 2373
+WARNING 2023-09-22 15:13:26,831 log 2968 9328 Not Found: /about/img/me.jpg
+WARNING 2023-09-22 15:13:26,831 basehttp 2968 9328 "GET /about/img/me.jpg HTTP/1.1" 404 2463
+INFO 2023-09-22 15:13:28,339 basehttp 2968 9328 "GET / HTTP/1.1" 200 2131
