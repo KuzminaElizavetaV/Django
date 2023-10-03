@@ -5,11 +5,11 @@ class Customer(models.Model):
     name = models.CharField(max_length=50)
     email = models.EmailField()
     phone = models.CharField(max_length=20)
-    address = models.CharField(max_length=100)
+    address = models.CharField(max_length=100, default='Unknown')
     reg_date = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return f'Имя клиента: {self.name}'
+        return f'Клиент: {self.name}, {self.email}, {self.phone}, {self.address}'
 
 
 class Product(models.Model):
@@ -20,7 +20,7 @@ class Product(models.Model):
     date_added = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return f'Название товара: {self.name}, цена: {self.price} руб.'
+        return f'{self.name}, цена: {self.price} руб.'
 
 
 class Order(models.Model):
@@ -30,5 +30,5 @@ class Order(models.Model):
     order_date = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return f'Заказ № {self.pk} на общую сумму: {self.total_price} руб.\n' \
-               f'Товары: {list(map(str, self.products.all()))}'
+        return f'Заказ № {self.pk} на общую сумму {self.total_price} руб.\n' \
+               f'Товары: {list(map(str, self.products.all()))}\n{self.customer}'
