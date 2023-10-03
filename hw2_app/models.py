@@ -9,7 +9,7 @@ class Customer(models.Model):
     reg_date = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return f'Клиент: {self.name}'
+        return f'Имя клиента: {self.name}'
 
 
 class Product(models.Model):
@@ -20,14 +20,15 @@ class Product(models.Model):
     date_added = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return f'Товар: {self.name}, цена: {self.price}'
+        return f'Название товара: {self.name}, цена: {self.price} руб.'
 
 
 class Order(models.Model):
-    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE, related_name='orders')
     products = models.ManyToManyField(Product)
     total_price = models.DecimalField(max_digits=8, decimal_places=2)
     order_date = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return f'Заказ № {self.pk} на сумму: {self.total_price}'
+        return f'Заказ № {self.pk} на общую сумму: {self.total_price} руб.\n' \
+               f'Товары: {list(map(str, self.products.all()))}'
