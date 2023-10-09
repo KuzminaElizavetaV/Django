@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="container text-center my-5">
+    <h1 class="fw-light text-left">Заказы клиента {{ customer.name }}, телефон: {{ customer.phone }}</h1>
+</div>
+<div class="container text-left my-5">
+    <ul>
+        {% for order in orders %}
+        <li class="lead text-muted" > <a href="{% url 'order' order.pk %}"> Заказ №_{{ order.pk }} от {{ order.order_date }} </a> </li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="container text-center my-5">
+    <a href="{% url 'home' %}" class="btn btn-primary">На главную</a>
+</div>
+{% endblock %}

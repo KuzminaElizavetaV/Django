@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class Customer(models.Model):
@@ -28,6 +29,9 @@ class Order(models.Model):
     products = models.ManyToManyField(Product)
     total_price = models.DecimalField(max_digits=8, decimal_places=2)
     order_date = models.DateField(auto_now_add=True)
+
+    def get_absolute_url(self):
+        return reverse('order', kwargs={'pk': self.pk})
 
     def __str__(self):
         return f'Заказ № {self.pk} на общую сумму {self.total_price} руб.\n' \

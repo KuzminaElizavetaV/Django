@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="container text-center my-5">
+    <div class="row">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Заказ №_{{ order.pk }} </h1>
+            <h2 class="fw-light">на общую сумму {{ order.total_price }} руб. </h2>
+            <p class="lead text-muted">Дата оформления: {{ order.order_date }}</p>
+             <br>
+            <h3 class="fw-light">Список товаров</h3>
+            {% for product in products %}
+            <li class="lead text-muted">Наименование: {{ product.name }}, цена: {{ product.price }} руб. </a> </li>
+            {% endfor %}
+            <br>
+            <a href="{% url 'customer_orders' order.customer.pk %}" class="btn btn-primary">Назад к списку</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
