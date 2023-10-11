@@ -1,11 +1,13 @@
 from django.utils import timezone
+from django.urls import reverse
 from django.views.generic import TemplateView
-from django.shortcuts import get_object_or_404
-from .models import Customer, Order
+from django.shortcuts import get_object_or_404, redirect, render
+from .models import Customer, Order, Product
+from .forms import ProductForm
 
 
-class HomeView(TemplateView):
-    template_name = 'hw2_app/home.html'
+class ShopView(TemplateView):
+    template_name = 'hw2_app/shop.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -54,4 +56,27 @@ class CustomerProductsView(TemplateView):
                                       order_date__gte=(timezone.now() - timezone.timedelta(days=days))).all()
         products = [product for order in orders for product in order.products.all()]
         context['products'] = set(products)
+        return context
+
+
+def update_product(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    if request.method == 'POST':
+        product = ProductForm(request.POST, request.FILES, instance=product)
+        if product.is_valid():
+            product.save()
+            return redirect(reverse('product', kwargs={'product_id': product_id}))
+    else:
+        form = ProductForm(instance=product)
+        return render(request, 'hw2_app/update_product.html', {'form': form, 'title': 'Редактирование товара'})
+
+
+class ProductView(TemplateView):
+    template_name = 'hw2_app/product.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        product = get_object_or_404(Product, pk=self.kwargs['product_id'])
+        context['product'] = product
+        context['title'] = 'Информация о товаре'
         return context

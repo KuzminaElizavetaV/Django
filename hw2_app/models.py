@@ -15,10 +15,12 @@ class Customer(models.Model):
 
 class Product(models.Model):
     name = models.CharField(max_length=50)
-    description = models.TextField()
+    description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=8, decimal_places=2)
-    quantity = models.IntegerField()
+    quantity = models.IntegerField(default=1)
     date_added = models.DateField(auto_now_add=True)
+    image = models.ImageField(default=None, blank=True)
+    update_date = models.DateField(auto_now=True)
 
     def __str__(self):
         return f'{self.name}, цена: {self.price} руб.'

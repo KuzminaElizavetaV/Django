@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row text-center">
+    <h1 class="fw-light"> {{ title }} </h1>
+        <br>
+    </div>
+    <div class="row">
+    <br>
+      <div class="col-lg-6 col-md-8 text-left mx-auto">
+          <br>
+          <h2 class="fw-light">Наименование товара: {{ product.name }}</h2>
+          <p class="lead text-muted">Описание товара: {{ product.description }}</p>
+          <p class="lead text-muted">Количество: {{ product.quantity }}</p>
+          <p class="lead text-muted">Цена: {{ product.price }} руб.</p>
+          <p class="lead text-muted">Дата добавления товара: {{ product.date_added }}</p>
+          <p class="lead text-muted">Дата обновления товара: {{ product.update_date }}</p>
+          <br>
+          <a href="{% url 'update_product' product.pk %}" class="btn btn-primary">Редактировать товар</a>
+          <a href="{% url 'home' %}" class="btn btn-primary">На главную</a>
+      </div>
+      <div class="col-lg-6 col-md-8 text-center mx-auto">
+          <br>
+          {% if product.image %}
+          <img src="{{ product.image.url }}" alt="{{ product.name }}" height="450">
+          {% endif %}
+      </div>
+    </div>
+</div>
+{% endblock %}

@@ -7,3 +7,601 @@ INFO 2023-10-09 15:54:00,815 basehttp 3152 14976 "GET /customer_products/2/8/ HT
 INFO 2023-10-09 15:54:10,042 basehttp 3152 14976 "GET /customer_products/2/7/ HTTP/1.1" 200 1895
 INFO 2023-10-09 15:54:21,198 basehttp 3152 14976 "GET /customer_products/3/7/ HTTP/1.1" 200 2022
 INFO 2023-10-09 15:54:38,731 basehttp 3152 14976 "GET / HTTP/1.1" 200 1395
+INFO 2023-10-10 16:10:28,708 autoreload 6888 3084 Watching for file changes with StatReloader
+INFO 2023-10-10 16:11:06,597 autoreload 276 14320 Watching for file changes with StatReloader
+INFO 2023-10-10 16:12:48,373 autoreload 1972 14172 Watching for file changes with StatReloader
+INFO 2023-10-10 16:12:56,045 basehttp 1972 6884 "GET / HTTP/1.1" 200 1395
+INFO 2023-10-10 16:13:20,263 basehttp 1972 6884 "GET /product_update/2/ HTTP/1.1" 200 2552
+INFO 2023-10-10 16:15:37,767 autoreload 8976 12772 Watching for file changes with StatReloader
+INFO 2023-10-10 16:15:45,348 basehttp 8976 3368 "GET /product_update/2/ HTTP/1.1" 200 2575
+INFO 2023-10-10 16:18:30,303 autoreload 10432 17076 Watching for file changes with StatReloader
+INFO 2023-10-10 16:18:32,668 basehttp 10432 3788 "GET /product_update/2/ HTTP/1.1" 200 2576
+INFO 2023-10-10 16:19:10,319 autoreload 13752 14540 Watching for file changes with StatReloader
+INFO 2023-10-10 16:19:13,254 basehttp 13752 15588 "GET /product_update/2/ HTTP/1.1" 200 1854
+INFO 2023-10-10 16:20:09,557 autoreload 13812 13544 Watching for file changes with StatReloader
+ERROR 2023-10-10 16:20:11,408 log 13812 15740 Internal Server Error: /product_update/2/
+Traceback (most recent call last):
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\homework_project\hw2_app\views.py", line 75, in update_product
+    return render(request, 'hw2_app/update_product.html', {'form': form, context: context})
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'dict'
+ERROR 2023-10-10 16:20:11,410 basehttp 13812 15740 "GET /product_update/2/ HTTP/1.1" 500 66433
+INFO 2023-10-10 16:20:46,495 autoreload 15516 4740 Watching for file changes with StatReloader
+INFO 2023-10-10 16:20:49,668 basehttp 15516 1844 "GET /product_update/2/ HTTP/1.1" 200 2576
+INFO 2023-10-10 16:22:31,638 autoreload 3036 16732 Watching for file changes with StatReloader
+INFO 2023-10-10 16:22:34,183 basehttp 3036 2700 "GET /product_update/2/ HTTP/1.1" 200 2658
+ERROR 2023-10-10 16:31:44,399 log 3036 11504 Internal Server Error: /product_update/2/
+Traceback (most recent call last):
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\homework_project\hw2_app\views.py", line 68, in update_product
+    return redirect(reverse('product_by_id', kwargs={'product_id': product_id}))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product_by_id' not found. 'product_by_id' is not a valid view function or pattern name.
+ERROR 2023-10-10 16:31:44,401 basehttp 3036 11504 "POST /product_update/2/ HTTP/1.1" 500 79299
+INFO 2023-10-10 16:59:56,523 autoreload 8612 16388 Watching for file changes with StatReloader
+INFO 2023-10-10 17:03:08,793 autoreload 7372 10208 Watching for file changes with StatReloader
+INFO 2023-10-10 17:03:14,819 basehttp 7372 5084 "GET /product_update/2/ HTTP/1.1" 200 3224
+ERROR 2023-10-10 17:03:29,466 log 7372 5084 Internal Server Error: /product_update/2/
+Traceback (most recent call last):
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\homework_project\hw2_app\views.py", line 68, in update_product
+    return redirect(reverse('product', kwargs={'product_id': product_id}))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product' with keyword arguments '{'product_id': 2}' not found. 1 pattern(s) tried: ['product/(?P<int>[^/]+):product_id\\)\\Z']
+ERROR 2023-10-10 17:03:29,467 basehttp 7372 5084 "POST /product_update/2/ HTTP/1.1" 500 81681
+WARNING 2023-10-10 17:04:52,024 log 7372 5084 Not Found: /product/2/
+WARNING 2023-10-10 17:04:52,025 basehttp 7372 5084 "GET /product/2/ HTTP/1.1" 404 3408
+WARNING 2023-10-10 17:05:12,780 log 7372 5084 Not Found: /product/2
+WARNING 2023-10-10 17:05:12,780 basehttp 7372 5084 "GET /product/2 HTTP/1.1" 404 3405
+INFO 2023-10-10 17:06:01,731 autoreload 15000 11224 Watching for file changes with StatReloader
+WARNING 2023-10-10 17:06:05,377 log 15000 17196 Not Found: /product/2/
+WARNING 2023-10-10 17:06:05,377 basehttp 15000 17196 "GET /product/2/ HTTP/1.1" 404 3409
+WARNING 2023-10-10 17:06:28,440 log 15000 17196 Not Found: /product/1/
+WARNING 2023-10-10 17:06:28,441 basehttp 15000 17196 "GET /product/1/ HTTP/1.1" 404 3409
+INFO 2023-10-10 17:09:09,770 autoreload 17824 18344 Watching for file changes with StatReloader
+INFO 2023-10-10 17:09:12,832 basehttp 17824 2888 "GET / HTTP/1.1" 200 1395
+WARNING 2023-10-10 17:09:26,946 log 17824 2888 Not Found: /product/3
+WARNING 2023-10-10 17:09:26,947 basehttp 17824 2888 "GET /product/3 HTTP/1.1" 404 3406
+INFO 2023-10-10 17:10:24,071 autoreload 14620 11548 Watching for file changes with StatReloader
+INFO 2023-10-10 17:10:28,345 basehttp 14620 16724 "GET /product/3 HTTP/1.1" 301 0
+INFO 2023-10-10 17:10:28,356 basehttp 14620 17924 "GET /product/3/ HTTP/1.1" 200 2262
+INFO 2023-10-10 17:10:48,158 basehttp 14620 17924 "GET /product/2 HTTP/1.1" 301 0
+INFO 2023-10-10 17:10:48,164 basehttp 14620 7580 "GET /product/2/ HTTP/1.1" 200 2921
+WARNING 2023-10-10 17:10:48,185 log 14620 7580 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:10:48,185 basehttp 14620 7580 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:11:19,114 basehttp 14620 7580 "GET /product/2/ HTTP/1.1" 200 2921
+WARNING 2023-10-10 17:11:19,129 log 14620 7580 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:11:19,129 basehttp 14620 7580 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:13:27,820 autoreload 11032 2468 Watching for file changes with StatReloader
+INFO 2023-10-10 17:13:33,147 basehttp 11032 17452 "GET /product/2/ HTTP/1.1" 200 2930
+WARNING 2023-10-10 17:13:33,169 log 11032 17452 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:13:33,170 basehttp 11032 17452 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:14:07,147 autoreload 1252 15848 Watching for file changes with StatReloader
+INFO 2023-10-10 17:14:10,494 basehttp 1252 15196 "GET /product/2/ HTTP/1.1" 200 2930
+WARNING 2023-10-10 17:14:10,511 log 1252 15196 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:14:10,511 basehttp 1252 15196 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:14:14,249 basehttp 1252 15196 "GET /product/2/ HTTP/1.1" 200 2930
+WARNING 2023-10-10 17:14:14,264 log 1252 15196 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:14:14,265 basehttp 1252 15196 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:16:00,174 autoreload 17988 18244 Watching for file changes with StatReloader
+INFO 2023-10-10 17:16:10,432 basehttp 17988 15536 "GET /product/2/ HTTP/1.1" 200 2832
+WARNING 2023-10-10 17:16:10,450 log 17988 15536 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:16:10,451 basehttp 17988 15536 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:16:45,819 autoreload 5092 14712 Watching for file changes with StatReloader
+INFO 2023-10-10 17:16:46,999 basehttp 5092 6516 "GET /product/2/ HTTP/1.1" 200 2847
+WARNING 2023-10-10 17:16:47,017 log 5092 6516 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:16:47,017 basehttp 5092 6516 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:20:49,370 autoreload 15548 17768 Watching for file changes with StatReloader
+INFO 2023-10-10 17:20:54,585 basehttp 15548 16548 "GET /product/2/ HTTP/1.1" 200 2900
+WARNING 2023-10-10 17:20:54,606 log 15548 16548 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:20:54,606 basehttp 15548 16548 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:22:47,672 autoreload 7044 14680 Watching for file changes with StatReloader
+INFO 2023-10-10 17:22:51,842 basehttp 7044 17556 "GET /product/2/ HTTP/1.1" 200 2912
+WARNING 2023-10-10 17:22:51,865 log 7044 17556 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:22:51,865 basehttp 7044 17556 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:23:34,577 autoreload 17716 14564 Watching for file changes with StatReloader
+INFO 2023-10-10 17:23:35,972 basehttp 17716 17980 "GET /product/2/ HTTP/1.1" 200 2922
+WARNING 2023-10-10 17:23:35,993 log 17716 17980 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:23:35,993 basehttp 17716 17980 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:23:37,581 basehttp 17716 17980 "GET /product/2/ HTTP/1.1" 200 2922
+WARNING 2023-10-10 17:23:37,596 log 17716 17980 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:23:37,597 basehttp 17716 17980 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:23:40,669 basehttp 17716 17980 "GET /product/2/ HTTP/1.1" 200 2922
+WARNING 2023-10-10 17:23:40,684 log 17716 17980 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:23:40,685 basehttp 17716 17980 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:24:20,090 autoreload 656 14716 Watching for file changes with StatReloader
+INFO 2023-10-10 17:24:22,002 basehttp 656 17956 "GET /product/2/ HTTP/1.1" 200 2910
+WARNING 2023-10-10 17:24:22,021 log 656 17956 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:24:22,021 basehttp 656 17956 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:25:19,469 autoreload 14620 18256 Watching for file changes with StatReloader
+INFO 2023-10-10 17:25:22,762 basehttp 14620 16660 "GET /product/2/ HTTP/1.1" 200 2905
+WARNING 2023-10-10 17:25:22,782 log 14620 16660 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:25:22,782 basehttp 14620 16660 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:25:27,349 basehttp 14620 16660 "GET /product/2/ HTTP/1.1" 200 2905
+WARNING 2023-10-10 17:25:27,365 log 14620 16660 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:25:27,366 basehttp 14620 16660 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:25:27,984 basehttp 14620 16660 "GET /product/2/ HTTP/1.1" 200 2905
+WARNING 2023-10-10 17:25:27,999 log 14620 16660 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:25:27,999 basehttp 14620 16660 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:25:29,485 basehttp 14620 16660 "GET /product/2/ HTTP/1.1" 200 2905
+WARNING 2023-10-10 17:25:29,501 log 14620 16660 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:25:29,501 basehttp 14620 16660 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:25:58,367 autoreload 14564 8156 Watching for file changes with StatReloader
+INFO 2023-10-10 17:26:04,041 basehttp 14564 4648 "GET /product/2/ HTTP/1.1" 200 2907
+WARNING 2023-10-10 17:26:04,058 log 14564 4648 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:26:04,059 basehttp 14564 4648 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:28:29,736 autoreload 17812 15612 Watching for file changes with StatReloader
+INFO 2023-10-10 17:28:35,946 basehttp 17812 8524 "GET /product/2/ HTTP/1.1" 200 3017
+WARNING 2023-10-10 17:28:35,966 log 17812 8524 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:28:35,966 basehttp 17812 8524 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:30:39,256 autoreload 7032 15664 Watching for file changes with StatReloader
+INFO 2023-10-10 17:30:41,021 basehttp 7032 5708 "GET /product/2/ HTTP/1.1" 200 3048
+WARNING 2023-10-10 17:30:41,040 log 7032 5708 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:30:41,041 basehttp 7032 5708 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:31:26,803 autoreload 12004 10208 Watching for file changes with StatReloader
+INFO 2023-10-10 17:31:28,636 basehttp 12004 17924 "GET /product/2/ HTTP/1.1" 200 3078
+WARNING 2023-10-10 17:31:28,653 log 12004 17924 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:31:28,654 basehttp 12004 17924 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:33:06,596 autoreload 13288 18164 Watching for file changes with StatReloader
+INFO 2023-10-10 17:33:08,749 basehttp 13288 14228 "GET /product/2/ HTTP/1.1" 200 3294
+WARNING 2023-10-10 17:33:08,769 log 13288 14228 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:33:08,769 basehttp 13288 14228 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:35:03,951 autoreload 18096 3152 Watching for file changes with StatReloader
+INFO 2023-10-10 17:35:07,479 basehttp 18096 11960 "GET /product/2/ HTTP/1.1" 200 3078
+WARNING 2023-10-10 17:35:07,499 log 18096 11960 Not Found: /media/oppo_a1k_svhbl72.jpg
+WARNING 2023-10-10 17:35:07,499 basehttp 18096 11960 "GET /media/oppo_a1k_svhbl72.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:35:45,669 basehttp 18096 11960 "GET /product_update/2/ HTTP/1.1" 200 3224
+INFO 2023-10-10 17:36:17,558 basehttp 18096 11960 "GET / HTTP/1.1" 200 1395
+INFO 2023-10-10 17:37:53,405 autoreload 4436 7384 Watching for file changes with StatReloader
+INFO 2023-10-10 17:38:07,606 basehttp 4436 12420 "GET /product_update/2/ HTTP/1.1" 200 3224
+INFO 2023-10-10 17:38:28,174 basehttp 4436 12420 "POST /product_update/2/ HTTP/1.1" 302 0
+INFO 2023-10-10 17:38:28,183 basehttp 4436 12420 "GET /product/2/ HTTP/1.1" 200 3078
+WARNING 2023-10-10 17:38:28,202 log 4436 12420 Not Found: /media/oppo_a1k_AccWnKe.jpg
+WARNING 2023-10-10 17:38:28,203 basehttp 4436 12420 "GET /media/oppo_a1k_AccWnKe.jpg HTTP/1.1" 404 3456
+WARNING 2023-10-10 17:40:09,461 log 4436 12420 Not Found: /media/oppo_a1k_AccWnKe.jpg
+WARNING 2023-10-10 17:40:09,462 basehttp 4436 12420 "GET /media/oppo_a1k_AccWnKe.jpg HTTP/1.1" 404 3456
+WARNING 2023-10-10 17:40:19,939 log 4436 12420 Not Found: /media/oppo_a1k_AccWnKe.jpg
+WARNING 2023-10-10 17:40:19,940 basehttp 4436 12420 "GET /media/oppo_a1k_AccWnKe.jpg HTTP/1.1" 404 3456
+INFO 2023-10-10 17:50:29,994 autoreload 4436 7384 D:\DjangoProject\homework_project\homework_project\settings.py changed, reloading.
+INFO 2023-10-10 17:50:30,513 autoreload 8296 15844 Watching for file changes with StatReloader
+INFO 2023-10-10 17:51:07,966 autoreload 8296 15844 D:\DjangoProject\homework_project\homework_project\urls.py changed, reloading.
+INFO 2023-10-10 17:51:08,484 autoreload 16880 5384 Watching for file changes with StatReloader
+INFO 2023-10-10 17:54:42,134 autoreload 11692 18412 Watching for file changes with StatReloader
+INFO 2023-10-10 17:54:45,564 basehttp 11692 17068 "GET /product/2/ HTTP/1.1" 200 3078
+INFO 2023-10-10 17:54:45,704 basehttp 11692 17068 "GET /media/oppo_a1k_AccWnKe.jpg HTTP/1.1" 200 17498
+INFO 2023-10-10 17:55:48,715 autoreload 16168 15568 Watching for file changes with StatReloader
+INFO 2023-10-10 17:55:57,852 basehttp 16168 14000 "GET /product/2/ HTTP/1.1" 200 3019
+INFO 2023-10-10 17:56:52,129 autoreload 15356 12124 Watching for file changes with StatReloader
+INFO 2023-10-10 17:56:53,488 basehttp 15356 18212 "GET /product/2/ HTTP/1.1" 200 3020
+INFO 2023-10-10 17:56:53,499 basehttp 15356 18212 "GET /media/oppo_a1k_AccWnKe.jpg HTTP/1.1" 304 0
+INFO 2023-10-10 17:57:22,411 autoreload 14780 14828 Watching for file changes with StatReloader
+INFO 2023-10-10 17:57:26,700 basehttp 14780 4152 "GET /product/2/ HTTP/1.1" 200 3019
+INFO 2023-10-10 17:58:14,085 autoreload 16748 18264 Watching for file changes with StatReloader
+INFO 2023-10-10 17:58:16,940 basehttp 16748 18144 "GET /product/2/ HTTP/1.1" 200 3031
+INFO 2023-10-10 17:58:47,362 autoreload 15504 5400 Watching for file changes with StatReloader
+INFO 2023-10-10 17:58:55,339 basehttp 15504 14708 "GET /product/2/ HTTP/1.1" 200 3019
+INFO 2023-10-10 17:58:55,352 basehttp 15504 14708 "GET /media/oppo_a1k_AccWnKe.jpg HTTP/1.1" 304 0
+INFO 2023-10-10 18:03:09,052 autoreload 11884 16480 Watching for file changes with StatReloader
+INFO 2023-10-10 18:03:30,810 basehttp 11884 2424 "GET /hw1/ HTTP/1.1" 200 2131
+WARNING 2023-10-10 18:03:32,962 log 11884 2424 Not Found: /about/
+WARNING 2023-10-10 18:03:32,963 basehttp 11884 2424 "GET /about/ HTTP/1.1" 404 3522
+INFO 2023-10-10 18:07:38,190 autoreload 15348 11200 Watching for file changes with StatReloader
+WARNING 2023-10-10 18:07:44,359 log 15348 17336 Not Found: /about/
+WARNING 2023-10-10 18:07:44,359 basehttp 15348 17336 "GET /about/ HTTP/1.1" 404 3522
+INFO 2023-10-10 18:07:48,681 basehttp 15348 17336 "GET / HTTP/1.1" 200 1395
+INFO 2023-10-10 18:08:24,354 basehttp 15348 17336 "GET /hw1 HTTP/1.1" 301 0
+INFO 2023-10-10 18:08:24,358 basehttp 15348 15836 "GET /hw1/ HTTP/1.1" 200 2131
+WARNING 2023-10-10 18:08:28,574 log 15348 15836 Not Found: /about/
+WARNING 2023-10-10 18:08:28,575 basehttp 15348 15836 "GET /about/ HTTP/1.1" 404 3522
+INFO 2023-10-10 21:28:06,413 autoreload 2232 11464 Watching for file changes with StatReloader
+WARNING 2023-10-10 21:28:08,559 log 2232 11744 Not Found: /
+WARNING 2023-10-10 21:28:08,560 basehttp 2232 11744 "GET / HTTP/1.1" 404 2404
+WARNING 2023-10-10 21:28:08,630 log 2232 11744 Not Found: /favicon.ico
+WARNING 2023-10-10 21:28:08,631 basehttp 2232 11744 "GET /favicon.ico HTTP/1.1" 404 2455
+INFO 2023-10-10 21:28:42,243 basehttp 2232 12180 "GET /hw1/ HTTP/1.1" 200 2131
+WARNING 2023-10-10 21:28:50,180 log 2232 12180 Not Found: /about/
+WARNING 2023-10-10 21:28:50,181 basehttp 2232 12180 "GET /about/ HTTP/1.1" 404 2440
+INFO 2023-10-10 21:29:40,061 basehttp 2232 12180 "GET /hw1/about/ HTTP/1.1" 200 2373
+WARNING 2023-10-10 21:29:40,079 log 2232 12180 Not Found: /hw1/about/img/me.jpg
+WARNING 2023-10-10 21:29:40,080 basehttp 2232 12180 "GET /hw1/about/img/me.jpg HTTP/1.1" 404 2714
+INFO 2023-10-10 21:30:15,499 basehttp 2232 12180 "GET /shop/ HTTP/1.1" 200 1400
+INFO 2023-10-10 21:32:52,220 basehttp 2232 12180 "GET /shop/product/2/ HTTP/1.1" 200 3034
+INFO 2023-10-10 21:32:52,238 basehttp 2232 12180 "GET /media/oppo_a1k_AccWnKe.jpg HTTP/1.1" 304 0
+INFO 2023-10-10 21:35:28,398 basehttp 2232 12180 "GET /shop/product_update/2/ HTTP/1.1" 200 3234
+INFO 2023-10-10 21:35:38,827 basehttp 2232 12180 "POST /shop/product_update/2/ HTTP/1.1" 302 0
+INFO 2023-10-10 21:35:38,833 basehttp 2232 12180 "GET /shop/product/2/ HTTP/1.1" 200 3034
+INFO 2023-10-10 21:35:46,875 basehttp 2232 12180 "GET /shop/product_update/2/ HTTP/1.1" 200 3234
+INFO 2023-10-10 21:36:41,140 basehttp 2232 12180 "POST /shop/product_update/2/ HTTP/1.1" 302 0
+INFO 2023-10-10 21:36:41,147 basehttp 2232 12180 "GET /shop/product/2/ HTTP/1.1" 200 3034
+INFO 2023-10-11 11:48:12,473 autoreload 10888 4724 Watching for file changes with StatReloader
+INFO 2023-10-11 12:01:10,290 autoreload 15288 8000 Watching for file changes with StatReloader
+INFO 2023-10-11 12:01:20,144 basehttp 15288 14768 "GET /shop/product/2/ HTTP/1.1" 200 3034
+INFO 2023-10-11 12:01:20,158 basehttp 15288 14768 "GET /media/oppo_a1k_AccWnKe.jpg HTTP/1.1" 304 0
+WARNING 2023-10-11 12:01:20,192 log 15288 14768 Not Found: /favicon.ico
+WARNING 2023-10-11 12:01:20,192 basehttp 15288 14768 "GET /favicon.ico HTTP/1.1" 404 2455
+INFO 2023-10-11 12:02:17,032 autoreload 9840 9324 Watching for file changes with StatReloader
+INFO 2023-10-11 12:02:21,406 basehttp 9840 7836 "GET /shop/product/2/ HTTP/1.1" 200 3034
+INFO 2023-10-11 12:11:44,735 autoreload 148 7836 Watching for file changes with StatReloader
+WARNING 2023-10-11 12:11:47,490 log 148 14768 Not Found: /
+WARNING 2023-10-11 12:11:47,490 basehttp 148 14768 "GET / HTTP/1.1" 404 2404
+WARNING 2023-10-11 12:11:47,542 log 148 14768 Not Found: /favicon.ico
+WARNING 2023-10-11 12:11:47,543 basehttp 148 14768 "GET /favicon.ico HTTP/1.1" 404 2455
+INFO 2023-10-11 12:12:00,301 basehttp 148 14768 "GET /hw1/ HTTP/1.1" 200 2131
+INFO 2023-10-11 12:12:10,230 basehttp 148 14768 "GET /hw1/about HTTP/1.1" 301 0
+INFO 2023-10-11 12:12:10,233 basehttp 148 6300 "GET /hw1/about/ HTTP/1.1" 200 2373
+WARNING 2023-10-11 12:12:10,250 log 148 6300 Not Found: /hw1/about/img/me.jpg
+WARNING 2023-10-11 12:12:10,251 basehttp 148 6300 "GET /hw1/about/img/me.jpg HTTP/1.1" 404 2714
+INFO 2023-10-11 12:14:14,852 autoreload 5580 9608 Watching for file changes with StatReloader
+INFO 2023-10-11 12:14:16,838 basehttp 5580 14680 "GET /hw1/about/ HTTP/1.1" 200 2373
+WARNING 2023-10-11 12:14:16,855 log 5580 14680 Not Found: /hw1/about/img/me.jpg
+WARNING 2023-10-11 12:14:16,856 basehttp 5580 14680 "GET /hw1/about/img/me.jpg HTTP/1.1" 404 2714
+INFO 2023-10-11 12:14:18,457 basehttp 5580 14680 "GET /hw1/about/ HTTP/1.1" 200 2373
+WARNING 2023-10-11 12:14:18,470 log 5580 14680 Not Found: /hw1/about/img/me.jpg
+WARNING 2023-10-11 12:14:18,470 basehttp 5580 14680 "GET /hw1/about/img/me.jpg HTTP/1.1" 404 2714
+WARNING 2023-10-11 12:14:24,711 log 5580 14680 Not Found: /hw1/about/img/me.jpg
+WARNING 2023-10-11 12:14:24,711 basehttp 5580 14680 "GET /hw1/about/img/me.jpg HTTP/1.1" 404 2714
+INFO 2023-10-11 12:15:09,666 autoreload 14764 2980 Watching for file changes with StatReloader
+INFO 2023-10-11 12:15:12,245 basehttp 14764 644 "GET /hw1/about/ HTTP/1.1" 200 2373
+WARNING 2023-10-11 12:15:12,262 log 14764 644 Not Found: /hw1/about/img/me.jpg
+WARNING 2023-10-11 12:15:12,263 basehttp 14764 644 "GET /hw1/about/img/me.jpg HTTP/1.1" 404 2714
+INFO 2023-10-11 12:15:13,882 basehttp 14764 644 "GET /hw1/about/ HTTP/1.1" 200 2373
+WARNING 2023-10-11 12:15:13,897 log 14764 644 Not Found: /hw1/about/img/me.jpg
+WARNING 2023-10-11 12:15:13,897 basehttp 14764 644 "GET /hw1/about/img/me.jpg HTTP/1.1" 404 2714
+INFO 2023-10-11 12:21:58,627 autoreload 4796 7836 Watching for file changes with StatReloader
+INFO 2023-10-11 12:22:00,506 basehttp 4796 3316 "GET /hw1/about/ HTTP/1.1" 200 2373
+WARNING 2023-10-11 12:22:00,525 log 4796 3316 Not Found: /hw1/about/img/me.jpg
+WARNING 2023-10-11 12:22:00,525 basehttp 4796 3316 "GET /hw1/about/img/me.jpg HTTP/1.1" 404 2714
+INFO 2023-10-11 12:22:02,949 basehttp 4796 3316 "GET /hw1/about/ HTTP/1.1" 200 2373
+WARNING 2023-10-11 12:22:02,962 log 4796 3316 Not Found: /hw1/about/img/me.jpg
+WARNING 2023-10-11 12:22:02,962 basehttp 4796 3316 "GET /hw1/about/img/me.jpg HTTP/1.1" 404 2714
+INFO 2023-10-11 12:24:15,983 autoreload 2600 11928 Watching for file changes with StatReloader
+INFO 2023-10-11 12:24:20,562 basehttp 2600 11104 "GET /hw1/about/ HTTP/1.1" 200 2373
+WARNING 2023-10-11 12:24:20,583 log 2600 11104 Not Found: /hw1/about/img/me.jpg
+WARNING 2023-10-11 12:24:20,583 basehttp 2600 11104 "GET /hw1/about/img/me.jpg HTTP/1.1" 404 2714
+INFO 2023-10-11 12:26:43,279 autoreload 15212 1892 Watching for file changes with StatReloader
+INFO 2023-10-11 12:26:47,126 basehttp 15212 5216 "GET /hw1/about/ HTTP/1.1" 200 2373
+WARNING 2023-10-11 12:26:47,145 log 15212 5216 Not Found: /hw1/about/img/me.jpg
+WARNING 2023-10-11 12:26:47,145 basehttp 15212 5216 "GET /hw1/about/img/me.jpg HTTP/1.1" 404 2841
+INFO 2023-10-11 12:26:48,807 basehttp 15212 5216 "GET /hw1/about/ HTTP/1.1" 200 2373
+WARNING 2023-10-11 12:26:48,819 log 15212 5216 Not Found: /hw1/about/img/me.jpg
+WARNING 2023-10-11 12:26:48,820 basehttp 15212 5216 "GET /hw1/about/img/me.jpg HTTP/1.1" 404 2841
+INFO 2023-10-11 12:26:49,656 basehttp 15212 5216 "GET /hw1/about/ HTTP/1.1" 200 2373
+WARNING 2023-10-11 12:26:49,669 log 15212 5216 Not Found: /hw1/about/img/me.jpg
+WARNING 2023-10-11 12:26:49,669 basehttp 15212 5216 "GET /hw1/about/img/me.jpg HTTP/1.1" 404 2841
+INFO 2023-10-11 12:27:43,304 autoreload 10208 12560 Watching for file changes with StatReloader
+INFO 2023-10-11 12:27:46,243 basehttp 10208 8984 "GET /hw1/about/ HTTP/1.1" 200 2373
+WARNING 2023-10-11 12:27:46,261 log 10208 8984 Not Found: /hw1/about/img/me.jpg
+WARNING 2023-10-11 12:27:46,261 basehttp 10208 8984 "GET /hw1/about/img/me.jpg HTTP/1.1" 404 2841
+INFO 2023-10-11 12:28:52,438 autoreload 8596 11160 Watching for file changes with StatReloader
+INFO 2023-10-11 12:28:54,836 basehttp 8596 2900 "GET /hw1/about/ HTTP/1.1" 200 2373
+WARNING 2023-10-11 12:28:54,854 log 8596 2900 Not Found: /hw1/about/img/me.jpg
+WARNING 2023-10-11 12:28:54,854 basehttp 8596 2900 "GET /hw1/about/img/me.jpg HTTP/1.1" 404 2841
+INFO 2023-10-11 12:30:46,397 autoreload 8596 11160 D:\DjangoProject\homework_project\homework_project\urls.py changed, reloading.
+INFO 2023-10-11 12:30:46,900 autoreload 4012 7276 Watching for file changes with StatReloader
+INFO 2023-10-11 12:30:47,102 basehttp 4012 12092 "GET /hw1/about/ HTTP/1.1" 200 2373
+WARNING 2023-10-11 12:30:47,124 log 4012 12092 Not Found: /hw1/about/img/me.jpg
+WARNING 2023-10-11 12:30:47,125 basehttp 4012 12092 "GET /hw1/about/img/me.jpg HTTP/1.1" 404 2714
+INFO 2023-10-11 12:32:34,660 autoreload 9092 10712 Watching for file changes with StatReloader
+INFO 2023-10-11 12:32:37,190 basehttp 9092 8100 "GET /hw1/about/ HTTP/1.1" 200 2373
+WARNING 2023-10-11 12:32:37,209 log 9092 8100 Not Found: /hw1/about/img/me.jpg
+WARNING 2023-10-11 12:32:37,209 basehttp 9092 8100 "GET /hw1/about/img/me.jpg HTTP/1.1" 404 2714
+INFO 2023-10-11 12:39:34,413 autoreload 13808 11968 Watching for file changes with StatReloader
+ERROR 2023-10-11 12:39:39,970 log 13808 1432 Internal Server Error: /hw1/about/
+Traceback (most recent call last):
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'base.html'> must be the first tag in the template.
+ERROR 2023-10-11 12:39:39,974 basehttp 13808 1432 "GET /hw1/about/ HTTP/1.1" 500 129999
+INFO 2023-10-11 12:40:44,491 autoreload 8500 10148 Watching for file changes with StatReloader
+ERROR 2023-10-11 12:40:45,325 log 8500 7372 Internal Server Error: /hw1/about/
+Traceback (most recent call last):
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'main' not found. 'main' is not a valid view function or pattern name.
+ERROR 2023-10-11 12:40:45,330 basehttp 8500 7372 "GET /hw1/about/ HTTP/1.1" 500 155856
+INFO 2023-10-11 12:41:12,760 autoreload 13448 5084 Watching for file changes with StatReloader
+INFO 2023-10-11 12:41:15,158 basehttp 13448 9904 "GET /hw1/about/ HTTP/1.1" 200 1774
+INFO 2023-10-11 12:41:15,262 basehttp 13448 9904 "GET /static/hw1_app/me.jpg HTTP/1.1" 200 190892
+INFO 2023-10-11 12:45:38,350 autoreload 1232 2156 Watching for file changes with StatReloader
+INFO 2023-10-11 12:45:47,102 basehttp 1232 5620 "GET /hw1/about/ HTTP/1.1" 200 1799
+INFO 2023-10-11 12:47:27,450 autoreload 12188 11852 Watching for file changes with StatReloader
+INFO 2023-10-11 12:47:28,647 basehttp 12188 6032 "GET /hw1/about/ HTTP/1.1" 200 1799
+INFO 2023-10-11 12:47:31,324 basehttp 12188 6032 "GET /hw1/about/ HTTP/1.1" 200 1799
+INFO 2023-10-11 12:49:38,745 autoreload 14452 12304 Watching for file changes with StatReloader
+INFO 2023-10-11 12:49:41,242 basehttp 14452 15072 "GET /hw1/about/ HTTP/1.1" 200 1799
+INFO 2023-10-11 12:49:42,796 basehttp 14452 15072 "GET /hw1/about/ HTTP/1.1" 200 1799
+INFO 2023-10-11 12:51:18,243 basehttp 14452 15072 "GET /shop/ HTTP/1.1" 200 1400
+INFO 2023-10-11 12:51:32,289 basehttp 14452 15072 "GET /hw1/ HTTP/1.1" 200 1933
+INFO 2023-10-11 12:51:43,280 basehttp 14452 15072 "GET /hw1/about/ HTTP/1.1" 200 1799
+INFO 2023-10-11 13:01:40,152 autoreload 7124 6604 Watching for file changes with StatReloader
+INFO 2023-10-11 13:01:43,011 basehttp 7124 2864 "GET /hw1/about/ HTTP/1.1" 200 1799
+INFO 2023-10-11 13:02:00,369 basehttp 7124 2864 "GET /hw1/ HTTP/1.1" 200 1933
+INFO 2023-10-11 13:45:06,906 autoreload 9332 11052 Watching for file changes with StatReloader
+WARNING 2023-10-11 13:45:18,210 log 9332 12104 Not Found: /
+WARNING 2023-10-11 13:45:18,211 basehttp 9332 12104 "GET / HTTP/1.1" 404 2531
+ERROR 2023-10-11 13:45:50,045 log 9332 12104 Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'shop/' not found. 'shop/' is not a valid view function or pattern name.
+ERROR 2023-10-11 13:45:50,049 basehttp 9332 12104 "GET /shop/ HTTP/1.1" 500 139110
+INFO 2023-10-11 13:46:37,207 autoreload 7624 14876 Watching for file changes with StatReloader
+INFO 2023-10-11 13:46:38,905 basehttp 7624 3608 "GET /shop/ HTTP/1.1" 200 1600
+INFO 2023-10-11 13:46:49,683 basehttp 7624 3608 "GET /hw1/ HTTP/1.1" 200 2133
+INFO 2023-10-11 13:46:52,258 basehttp 7624 3608 "GET /hw1/about/ HTTP/1.1" 200 1999
+INFO 2023-10-11 13:46:52,365 basehttp 7624 3608 "GET /static/hw1_app/me.jpg HTTP/1.1" 200 190892
+INFO 2023-10-11 13:46:55,055 basehttp 7624 3608 "GET /shop/ HTTP/1.1" 200 1600
+INFO 2023-10-11 13:47:01,287 basehttp 7624 3608 "GET /hw1/about/ HTTP/1.1" 200 1999
+INFO 2023-10-11 13:47:07,815 basehttp 7624 3608 "GET /hw1/ HTTP/1.1" 200 2133
+INFO 2023-10-11 13:48:46,029 autoreload 12124 9848 Watching for file changes with StatReloader
+INFO 2023-10-11 13:49:25,067 basehttp 12124 8332 "GET /hw1/ HTTP/1.1" 200 2207
+INFO 2023-10-11 13:49:45,760 basehttp 12124 8332 "GET /shop/ HTTP/1.1" 200 1600
+INFO 2023-10-11 13:51:40,600 autoreload 11256 10640 Watching for file changes with StatReloader
+INFO 2023-10-11 13:51:50,595 basehttp 11256 9296 "GET / HTTP/1.1" 200 2195
+INFO 2023-10-11 13:51:55,158 basehttp 11256 9296 "GET / HTTP/1.1" 200 2195
+INFO 2023-10-11 13:51:58,050 basehttp 11256 9296 "GET /about/ HTTP/1.1" 200 1987
+INFO 2023-10-11 13:51:59,519 basehttp 11256 9296 "GET /shop/ HTTP/1.1" 200 1592
+INFO 2023-10-11 13:52:13,775 basehttp 11256 9296 "GET / HTTP/1.1" 200 2195
+INFO 2023-10-11 14:05:22,069 autoreload 7088 9512 Watching for file changes with StatReloader
+ERROR 2023-10-11 14:05:25,789 log 7088 14592 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'shop' not found. 'shop' is not a valid view function or pattern name.
+ERROR 2023-10-11 14:05:25,797 basehttp 7088 14592 "GET / HTTP/1.1" 500 157366
+INFO 2023-10-11 14:06:06,503 autoreload 1480 8476 Watching for file changes with StatReloader
+INFO 2023-10-11 14:06:13,623 basehttp 1480 11356 "GET / HTTP/1.1" 200 2274
+INFO 2023-10-11 14:06:17,072 basehttp 1480 11356 "GET /shop/ HTTP/1.1" 200 1592
+INFO 2023-10-11 14:07:31,336 autoreload 15116 7256 Watching for file changes with StatReloader
+INFO 2023-10-11 14:09:55,647 autoreload 4580 11920 Watching for file changes with StatReloader
+INFO 2023-10-11 14:10:01,066 basehttp 4580 9060 "GET / HTTP/1.1" 200 2274
+INFO 2023-10-11 14:10:22,721 basehttp 4580 9060 "GET /shop/ HTTP/1.1" 200 1592
+INFO 2023-10-11 14:10:30,839 basehttp 4580 9060 "GET /shop/ HTTP/1.1" 200 1592
+INFO 2023-10-11 14:10:31,786 basehttp 4580 9060 "GET /about/ HTTP/1.1" 200 1987
+INFO 2023-10-11 14:10:33,408 basehttp 4580 9060 "GET / HTTP/1.1" 200 2274
+INFO 2023-10-11 14:10:35,625 basehttp 4580 9060 "GET /about/ HTTP/1.1" 200 1987
+INFO 2023-10-11 14:24:37,446 basehttp 4580 13208 "GET /shop/ HTTP/1.1" 200 1592

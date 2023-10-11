@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="container text-center my-5">
+    <div class="row">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <img class="rounded-img" src="{% static 'hw1_app/me.jpg' %}" alt="Тут должно быть мое фото" style="max-height:300px"/>
+            <h1 class="fw-light">Меня зовут Елизавета</h1>
+            <p class="lead text-muted">Я - начинающий разработчик на языке Python</p>
+            <a href="{% url 'main' %}" class="btn btn-primary">Назад</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
