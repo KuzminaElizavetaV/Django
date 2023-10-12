@@ -691,3 +691,482 @@ INFO 2023-10-11 14:45:31,929 basehttp 9872 10068 "GET /shop/order/25/ HTTP/1.1" 
 INFO 2023-10-11 14:45:38,841 basehttp 9872 10068 "GET /shop/customer_orders/1/ HTTP/1.1" 200 2043
 INFO 2023-10-11 14:46:44,526 basehttp 9872 10068 "GET /shop/order/22 HTTP/1.1" 301 0
 INFO 2023-10-11 14:46:44,531 basehttp 9872 11580 "GET /shop/order/22/ HTTP/1.1" 200 2166
+INFO 2023-10-11 15:21:23,362 autoreload 8656 12092 Watching for file changes with StatReloader
+INFO 2023-10-11 15:21:33,177 basehttp 8656 11248 "GET /shop/order/22/ HTTP/1.1" 200 2166
+INFO 2023-10-11 15:21:42,705 basehttp 8656 11248 "GET /shop/customer_orders/1/ HTTP/1.1" 200 2043
+INFO 2023-10-11 15:21:49,562 basehttp 8656 11248 "GET /shop/customer_orders/2 HTTP/1.1" 301 0
+INFO 2023-10-11 15:21:49,568 basehttp 8656 9660 "GET /shop/customer_orders/2/ HTTP/1.1" 200 2043
+INFO 2023-10-11 15:21:55,123 basehttp 8656 9660 "GET /shop/customer_orders/3 HTTP/1.1" 301 0
+INFO 2023-10-11 15:21:55,128 basehttp 8656 6816 "GET /shop/customer_orders/3/ HTTP/1.1" 200 1920
+INFO 2023-10-11 15:21:58,959 basehttp 8656 6816 "GET /shop/customer_orders/4 HTTP/1.1" 301 0
+INFO 2023-10-11 15:21:58,964 basehttp 8656 7628 "GET /shop/customer_orders/4/ HTTP/1.1" 200 1923
+INFO 2023-10-11 15:22:03,208 basehttp 8656 7628 "GET /shop/customer_orders/5 HTTP/1.1" 301 0
+INFO 2023-10-11 15:22:03,213 basehttp 8656 7364 "GET /shop/customer_orders/5/ HTTP/1.1" 200 2044
+INFO 2023-10-11 15:22:09,969 basehttp 8656 7364 "GET /shop/customer_orders/6 HTTP/1.1" 301 0
+INFO 2023-10-11 15:22:09,975 basehttp 8656 10576 "GET /shop/customer_orders/6/ HTTP/1.1" 200 2043
+INFO 2023-10-11 15:22:16,144 basehttp 8656 10576 "GET /shop/customer_orders/7 HTTP/1.1" 301 0
+WARNING 2023-10-11 15:22:16,151 log 8656 11524 Not Found: /shop/customer_orders/7/
+WARNING 2023-10-11 15:22:16,152 basehttp 8656 11524 "GET /shop/customer_orders/7/ HTTP/1.1" 404 3036
+INFO 2023-10-11 15:23:51,752 basehttp 8656 11524 "GET /shop/customer_orders/6/ HTTP/1.1" 200 2043
+INFO 2023-10-11 15:23:58,788 basehttp 8656 11524 "GET /shop/order/30/ HTTP/1.1" 200 2166
+INFO 2023-10-11 15:36:30,511 autoreload 14616 6512 Watching for file changes with StatReloader
+INFO 2023-10-11 15:36:45,748 basehttp 14616 9108 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-11 15:36:45,779 basehttp 14616 9108 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+INFO 2023-10-11 15:36:46,087 basehttp 14616 9108 "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+INFO 2023-10-11 15:36:46,089 basehttp 14616 9108 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2023-10-11 15:36:46,105 basehttp 14616 10208 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+INFO 2023-10-11 15:36:46,105 basehttp 14616 12332 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+INFO 2023-10-11 15:36:46,108 basehttp 14616 12048 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+INFO 2023-10-11 15:36:46,108 basehttp 14616 15324 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2023-10-11 15:36:46,110 basehttp 14616 14588 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2023-10-11 15:38:53,976 autoreload 9088 9280 Watching for file changes with StatReloader
+INFO 2023-10-11 15:38:56,389 basehttp 9088 8600 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-11 15:53:32,375 autoreload 8948 12108 Watching for file changes with StatReloader
+INFO 2023-10-11 15:54:41,203 basehttp 8948 8148 "GET / HTTP/1.1" 200 2274
+INFO 2023-10-11 15:54:42,884 basehttp 8948 8148 "GET /shop/ HTTP/1.1" 200 1592
+INFO 2023-10-11 15:54:58,568 basehttp 8948 8148 "GET /shop/customer_products/1/7 HTTP/1.1" 301 0
+INFO 2023-10-11 15:54:58,584 basehttp 8948 11456 "GET /shop/customer_products/1/7/ HTTP/1.1" 200 2227
+INFO 2023-10-11 15:55:11,030 basehttp 8948 11456 "GET /shop/customer_products/1/8 HTTP/1.1" 301 0
+INFO 2023-10-11 15:55:11,037 basehttp 8948 8316 "GET /shop/customer_products/1/8/ HTTP/1.1" 200 2227
+INFO 2023-10-11 15:55:22,710 basehttp 8948 8316 "GET /shop/customer_products/1/9 HTTP/1.1" 301 0
+INFO 2023-10-11 15:55:22,716 basehttp 8948 14552 "GET /shop/customer_products/1/9/ HTTP/1.1" 200 2227
+INFO 2023-10-11 15:55:35,243 basehttp 8948 14552 "GET /shop/customer_products/2/9/ HTTP/1.1" 200 2231
+INFO 2023-10-11 15:55:47,562 basehttp 8948 14552 "GET /shop/customer_products/3/9/ HTTP/1.1" 200 2227
+INFO 2023-10-11 15:55:56,835 basehttp 8948 14552 "GET /shop/customer_products/4/9/ HTTP/1.1" 200 2100
+INFO 2023-10-11 15:56:10,084 basehttp 8948 14552 "GET /shop/customer_products/5/9/ HTTP/1.1" 200 2100
+INFO 2023-10-12 12:55:47,118 autoreload 9556 10944 Watching for file changes with StatReloader
+INFO 2023-10-12 12:55:55,191 basehttp 9556 11744 "GET /shop/customer_products/5/9/ HTTP/1.1" 200 11929
+INFO 2023-10-12 12:55:55,202 basehttp 9556 7244 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-10-12 12:55:55,203 basehttp 9556 11744 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-10-12 12:55:55,215 basehttp 9556 7244 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-10-12 12:55:55,220 basehttp 9556 7244 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+WARNING 2023-10-12 12:55:55,264 log 9556 7244 Not Found: /favicon.ico
+WARNING 2023-10-12 12:55:55,264 basehttp 9556 7244 "GET /favicon.ico HTTP/1.1" 404 12697
+INFO 2023-10-12 12:56:29,323 basehttp 9556 7244 "GET /__debug__/render_panel/?store_id=5b615c29eb66484a9715a16b3cccbb02&panel_id=TemplatesPanel HTTP/1.1" 200 7187
+INFO 2023-10-12 12:57:08,885 basehttp 9556 7244 "GET /__debug__/render_panel/?store_id=5b615c29eb66484a9715a16b3cccbb02&panel_id=SQLPanel HTTP/1.1" 200 32141
+INFO 2023-10-12 13:14:06,215 basehttp 9556 4272 "GET /shop/customer_products/5/9/ HTTP/1.1" 200 11930
+INFO 2023-10-12 13:14:06,230 basehttp 9556 4272 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2023-10-12 13:14:06,231 basehttp 9556 5376 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2023-10-12 13:14:06,240 basehttp 9556 5376 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2023-10-12 13:14:06,244 basehttp 9556 5376 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2023-10-12 13:14:09,311 basehttp 9556 5376 "GET /__debug__/render_panel/?store_id=27e3c51d0a3648a8ad53c5a6ff24641d&panel_id=SQLPanel HTTP/1.1" 200 32142
+INFO 2023-10-12 13:19:26,507 autoreload 9556 10944 D:\DjangoProject\homework_project\hw2_app\views.py changed, reloading.
+INFO 2023-10-12 13:19:27,110 autoreload 2980 4192 Watching for file changes with StatReloader
+INFO 2023-10-12 13:20:12,285 autoreload 2980 4192 D:\DjangoProject\homework_project\hw2_app\views.py changed, reloading.
+INFO 2023-10-12 13:20:12,867 autoreload 4944 1312 Watching for file changes with StatReloader
+INFO 2023-10-12 13:20:29,923 autoreload 4944 1312 D:\DjangoProject\homework_project\hw2_app\views.py changed, reloading.
+INFO 2023-10-12 13:20:30,677 autoreload 4596 6652 Watching for file changes with StatReloader
+INFO 2023-10-12 13:22:11,007 autoreload 4596 6652 D:\DjangoProject\homework_project\hw2_app\views.py changed, reloading.
+INFO 2023-10-12 13:22:11,694 autoreload 13728 10680 Watching for file changes with StatReloader
+INFO 2023-10-12 14:04:34,774 autoreload 13728 10680 D:\DjangoProject\homework_project\hw2_app\views.py changed, reloading.
+INFO 2023-10-12 14:04:35,414 autoreload 5844 11240 Watching for file changes with StatReloader
+INFO 2023-10-12 14:05:21,544 autoreload 5844 11240 D:\DjangoProject\homework_project\hw2_app\views.py changed, reloading.
+INFO 2023-10-12 14:05:22,172 autoreload 8888 5344 Watching for file changes with StatReloader
+ERROR 2023-10-12 14:05:25,705 log 8888 892 Internal Server Error: /shop/customer_products/5/9/
+Traceback (most recent call last):
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\views\generic\base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\homework_project\hw2_app\views.py", line 57, in get_context_data
+    .prefech_related('products')
+     ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'prefech_related'
+ERROR 2023-10-12 14:05:25,731 basehttp 8888 892 "GET /shop/customer_products/5/9/ HTTP/1.1" 500 91969
+INFO 2023-10-12 14:05:25,742 basehttp 8888 892 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2023-10-12 14:05:25,743 basehttp 8888 11920 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2023-10-12 14:05:25,749 basehttp 8888 11920 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2023-10-12 14:05:25,836 basehttp 8888 11920 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2023-10-12 14:06:17,900 autoreload 8888 5344 D:\DjangoProject\homework_project\hw2_app\views.py changed, reloading.
+INFO 2023-10-12 14:06:18,488 autoreload 9080 9288 Watching for file changes with StatReloader
+INFO 2023-10-12 14:06:23,992 basehttp 9080 844 "GET /shop/customer_products/5/9/ HTTP/1.1" 200 11929
+INFO 2023-10-12 14:06:31,588 basehttp 9080 844 "GET /__debug__/render_panel/?store_id=f001b3301e4e4df98d5cb77d51b5442a&panel_id=SQLPanel HTTP/1.1" 200 32143
+INFO 2023-10-12 14:12:14,004 autoreload 9080 9288 D:\DjangoProject\homework_project\hw2_app\views.py changed, reloading.
+INFO 2023-10-12 14:12:14,594 autoreload 13016 2688 Watching for file changes with StatReloader
+ERROR 2023-10-12 14:12:19,173 log 13016 2704 Internal Server Error: /shop/customer_products/5/9/
+Traceback (most recent call last):
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\views\generic\base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\homework_project\hw2_app\views.py", line 57, in get_context_data
+    products = [product for order in orders for product in order.products.all().prefetch_related('products')]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\homework_project\hw2_app\views.py", line 57, in <listcomp>
+    products = [product for order in orders for product in order.products.all().prefetch_related('products')]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DjangoProject\venv\Lib\site-packages\django\db\models\query.py", line 398, in __iter__
+    self._fetch_all()
+  File "D:\DjangoProject\venv\Lib\site-packages\django\db\models\query.py", line 1883, in _fetch_all
+    self._prefetch_related_objects()
+  File "D:\DjangoProject\venv\Lib\site-packages\django\db\models\query.py", line 1273, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+  File "D:\DjangoProject\venv\Lib\site-packages\django\db\models\query.py", line 2296, in prefetch_related_objects
+    raise AttributeError(
+AttributeError: Cannot find 'products' on Product object, 'products' is an invalid parameter to prefetch_related()
+ERROR 2023-10-12 14:12:19,215 basehttp 13016 2704 "GET /shop/customer_products/5/9/ HTTP/1.1" 500 116163
+INFO 2023-10-12 14:12:44,351 autoreload 13016 2688 D:\DjangoProject\homework_project\hw2_app\views.py changed, reloading.
+INFO 2023-10-12 14:12:44,987 autoreload 1116 12128 Watching for file changes with StatReloader
+INFO 2023-10-12 14:13:20,732 autoreload 1116 12128 D:\DjangoProject\homework_project\hw2_app\views.py changed, reloading.
+INFO 2023-10-12 14:13:21,311 autoreload 11096 9548 Watching for file changes with StatReloader
+INFO 2023-10-12 14:13:22,818 basehttp 11096 7308 "GET /shop/customer_products/5/9/ HTTP/1.1" 200 11929
+INFO 2023-10-12 14:13:27,555 basehttp 11096 7308 "GET /__debug__/render_panel/?store_id=e9e58487e9814b51ba68aba5da2541fa&panel_id=SQLPanel HTTP/1.1" 200 23291
+INFO 2023-10-12 14:40:00,458 basehttp 11096 13756 "GET /shop/customer_orders/6/ HTTP/1.1" 200 11893
+INFO 2023-10-12 14:40:00,477 basehttp 11096 13756 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2023-10-12 14:40:00,477 basehttp 11096 10504 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2023-10-12 14:40:00,483 basehttp 11096 10504 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2023-10-12 14:40:00,489 basehttp 11096 10504 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2023-10-12 14:40:12,948 basehttp 11096 10504 "GET /__debug__/render_panel/?store_id=436ed31fb63e4387b4b7fecf4777cb93&panel_id=SQLPanel HTTP/1.1" 200 25494
+INFO 2023-10-12 14:40:49,368 basehttp 11096 10504 "GET /shop/order/22/ HTTP/1.1" 200 11984
+INFO 2023-10-12 14:40:53,772 basehttp 11096 10504 "GET /__debug__/render_panel/?store_id=2537441e94d5406291cae849ddd4c017&panel_id=SQLPanel HTTP/1.1" 200 47479
+INFO 2023-10-12 14:42:22,196 basehttp 11096 10504 "GET /shop/customer_orders/1/ HTTP/1.1" 200 11893
+INFO 2023-10-12 14:42:23,533 basehttp 11096 10504 "GET /shop/order/25/ HTTP/1.1" 200 11981
+INFO 2023-10-12 14:42:24,935 basehttp 11096 10504 "GET /shop/customer_orders/1/ HTTP/1.1" 200 11893
+INFO 2023-10-12 14:42:28,225 basehttp 11096 10504 "GET /__debug__/render_panel/?store_id=5a262c29650740d8939429947ab5d858&panel_id=HistoryPanel HTTP/1.1" 200 10799
+INFO 2023-10-12 14:42:28,229 basehttp 11096 10504 "GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 3330
+INFO 2023-10-12 14:42:52,659 basehttp 11096 10504 "GET /__debug__/render_panel/?store_id=5a262c29650740d8939429947ab5d858&panel_id=VersionsPanel HTTP/1.1" 200 887
+INFO 2023-10-12 14:43:07,902 basehttp 11096 10504 "GET /__debug__/render_panel/?store_id=5a262c29650740d8939429947ab5d858&panel_id=SettingsPanel HTTP/1.1" 200 26912
+INFO 2023-10-12 14:46:11,702 basehttp 11096 10504 "GET /__debug__/render_panel/?store_id=5a262c29650740d8939429947ab5d858&panel_id=HeadersPanel HTTP/1.1" 200 5000
+INFO 2023-10-12 14:46:15,831 basehttp 11096 10504 "GET /__debug__/render_panel/?store_id=5a262c29650740d8939429947ab5d858&panel_id=RequestPanel HTTP/1.1" 200 1419
+INFO 2023-10-12 15:37:17,927 autoreload 14116 4324 Watching for file changes with StatReloader
+INFO 2023-10-12 15:37:33,898 basehttp 14116 14616 "GET /admin HTTP/1.1" 301 0
+INFO 2023-10-12 15:37:33,918 basehttp 14116 8728 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-12 15:37:33,958 basehttp 14116 8728 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 14086
+INFO 2023-10-12 15:37:33,973 basehttp 14116 8728 "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+INFO 2023-10-12 15:37:33,985 basehttp 14116 3940 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+INFO 2023-10-12 15:37:33,986 basehttp 14116 8728 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2023-10-12 15:37:33,987 basehttp 14116 6024 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+INFO 2023-10-12 15:37:33,989 basehttp 14116 15288 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2023-10-12 15:37:33,991 basehttp 14116 8728 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2023-10-12 15:37:33,991 basehttp 14116 6024 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2023-10-12 15:37:33,991 basehttp 14116 12196 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2023-10-12 15:37:33,992 basehttp 14116 10568 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+INFO 2023-10-12 15:37:33,992 basehttp 14116 3940 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2023-10-12 15:37:33,996 basehttp 14116 3940 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2023-10-12 15:38:02,930 basehttp 14116 3940 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 14353
+INFO 2023-10-12 15:38:23,439 basehttp 14116 3940 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 14353
+INFO 2023-10-12 15:39:14,469 basehttp 14116 3940 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 14353
+INFO 2023-10-12 15:39:27,396 basehttp 14116 3940 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 14353
+INFO 2023-10-12 15:39:46,164 basehttp 14116 3940 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 14353
+INFO 2023-10-12 15:39:57,133 basehttp 14116 3940 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 14353
+INFO 2023-10-12 15:40:06,566 basehttp 14116 3940 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 14353
+INFO 2023-10-12 15:41:23,349 basehttp 14116 3940 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-10-12 15:41:23,392 basehttp 14116 3940 "GET /admin/ HTTP/1.1" 200 15647
+INFO 2023-10-12 15:41:23,403 basehttp 14116 3940 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2023-10-12 15:41:23,410 basehttp 14116 3940 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2023-10-12 15:41:23,411 basehttp 14116 10568 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2023-10-12 15:41:27,137 basehttp 14116 10568 "GET /admin/auth/user/ HTTP/1.1" 200 21537
+INFO 2023-10-12 15:41:27,149 basehttp 14116 10568 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+INFO 2023-10-12 15:41:27,155 basehttp 14116 6024 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2023-10-12 15:41:27,156 basehttp 14116 15288 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+INFO 2023-10-12 15:41:27,156 basehttp 14116 8728 "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+INFO 2023-10-12 15:41:27,156 basehttp 14116 10568 "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2023-10-12 15:41:27,161 basehttp 14116 6024 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2023-10-12 15:41:27,162 basehttp 14116 15288 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2023-10-12 15:41:27,163 basehttp 14116 8728 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2023-10-12 15:41:27,170 basehttp 14116 6024 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2023-10-12 15:41:27,174 basehttp 14116 12196 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+INFO 2023-10-12 15:41:27,179 basehttp 14116 10568 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2023-10-12 15:41:27,182 basehttp 14116 10568 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2023-10-12 15:41:27,187 basehttp 14116 3940 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 15:41:27,206 basehttp 14116 10568 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2023-10-12 15:41:27,206 basehttp 14116 3940 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2023-10-12 15:41:39,384 basehttp 14116 3940 "POST /admin/auth/user/ HTTP/1.1" 200 17386
+INFO 2023-10-12 15:41:39,398 basehttp 14116 3940 "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2023-10-12 15:41:40,903 basehttp 14116 3940 "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-10-12 15:41:40,942 basehttp 14116 3940 "GET /admin/auth/user/ HTTP/1.1" 200 21297
+INFO 2023-10-12 15:41:40,974 basehttp 14116 3940 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 15:41:58,389 basehttp 14116 3940 "GET /admin/auth/group/ HTTP/1.1" 200 17468
+INFO 2023-10-12 15:41:58,423 basehttp 14116 3940 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 15:41:59,963 basehttp 14116 3940 "GET /admin/auth/user/ HTTP/1.1" 200 21134
+INFO 2023-10-12 15:41:59,995 basehttp 14116 3940 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 15:43:43,350 autoreload 14116 4324 D:\DjangoProject\homework_project\hw2_app\admin.py changed, reloading.
+INFO 2023-10-12 15:43:43,987 autoreload 11656 13352 Watching for file changes with StatReloader
+INFO 2023-10-12 15:45:11,792 autoreload 11656 13352 D:\DjangoProject\homework_project\hw2_app\admin.py changed, reloading.
+INFO 2023-10-12 15:45:12,355 autoreload 11536 14656 Watching for file changes with StatReloader
+INFO 2023-10-12 15:48:35,286 autoreload 11536 14656 D:\DjangoProject\homework_project\homework_project\urls.py changed, reloading.
+INFO 2023-10-12 15:48:35,828 autoreload 12692 10776 Watching for file changes with StatReloader
+INFO 2023-10-12 15:48:45,067 basehttp 12692 14292 "GET /admin/auth/user/ HTTP/1.1" 200 22356
+INFO 2023-10-12 15:48:45,098 basehttp 12692 14292 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 15:50:19,045 basehttp 12692 14292 "GET /admin/auth/user/ HTTP/1.1" 200 22355
+INFO 2023-10-12 15:50:19,080 basehttp 12692 14292 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 15:52:26,309 autoreload 12692 10776 D:\DjangoProject\homework_project\homework_project\urls.py changed, reloading.
+INFO 2023-10-12 15:52:26,896 autoreload 13692 10712 Watching for file changes with StatReloader
+INFO 2023-10-12 15:52:28,073 basehttp 13692 10616 "GET /admin/auth/user/ HTTP/1.1" 200 22356
+INFO 2023-10-12 15:52:28,104 basehttp 13692 10616 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 15:52:44,754 basehttp 13692 10616 "GET /admin/ HTTP/1.1" 200 17534
+INFO 2023-10-12 15:52:44,775 basehttp 13692 10616 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2023-10-12 15:56:01,461 autoreload 13692 10712 D:\DjangoProject\homework_project\hw2_app\models.py changed, reloading.
+INFO 2023-10-12 15:56:02,100 autoreload 10604 14888 Watching for file changes with StatReloader
+INFO 2023-10-12 15:56:10,518 basehttp 10604 8924 "GET /admin/ HTTP/1.1" 200 17541
+INFO 2023-10-12 15:56:10,531 basehttp 10604 12080 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2023-10-12 15:56:10,532 basehttp 10604 8924 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2023-10-12 15:56:10,532 basehttp 10604 13316 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2023-10-12 15:56:10,540 basehttp 10604 13316 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2023-10-12 15:57:19,849 autoreload 10604 14888 D:\DjangoProject\homework_project\hw2_app\models.py changed, reloading.
+INFO 2023-10-12 15:57:20,420 autoreload 14372 6540 Watching for file changes with StatReloader
+INFO 2023-10-12 15:57:21,765 basehttp 14372 14408 "GET /admin/ HTTP/1.1" 200 17540
+INFO 2023-10-12 15:58:46,178 autoreload 14372 6540 D:\DjangoProject\homework_project\hw2_app\models.py changed, reloading.
+INFO 2023-10-12 15:58:46,739 autoreload 7892 13164 Watching for file changes with StatReloader
+INFO 2023-10-12 15:58:47,531 basehttp 7892 12692 "GET /admin/ HTTP/1.1" 200 17554
+INFO 2023-10-12 15:59:13,204 autoreload 7892 13164 D:\DjangoProject\homework_project\hw2_app\models.py changed, reloading.
+INFO 2023-10-12 15:59:13,743 autoreload 9968 2988 Watching for file changes with StatReloader
+INFO 2023-10-12 15:59:15,545 basehttp 9968 6640 "GET /admin/ HTTP/1.1" 200 17554
+INFO 2023-10-12 15:59:18,708 basehttp 9968 6640 "GET /admin/ HTTP/1.1" 200 17553
+INFO 2023-10-12 15:59:37,273 autoreload 9968 2988 D:\DjangoProject\homework_project\hw2_app\models.py changed, reloading.
+INFO 2023-10-12 15:59:37,916 autoreload 14432 14436 Watching for file changes with StatReloader
+INFO 2023-10-12 15:59:39,415 basehttp 14432 13756 "GET /admin/ HTTP/1.1" 200 17554
+INFO 2023-10-12 15:59:47,296 autoreload 15184 14000 Watching for file changes with StatReloader
+INFO 2023-10-12 15:59:52,203 basehttp 15184 6208 "GET /admin/ HTTP/1.1" 200 17554
+INFO 2023-10-12 16:00:57,600 autoreload 15184 14000 D:\DjangoProject\homework_project\hw2_app\apps.py changed, reloading.
+INFO 2023-10-12 16:00:58,043 autoreload 15000 15328 Watching for file changes with StatReloader
+INFO 2023-10-12 16:01:35,999 autoreload 15000 15328 D:\DjangoProject\homework_project\hw2_app\apps.py changed, reloading.
+INFO 2023-10-12 16:01:36,560 autoreload 6980 9944 Watching for file changes with StatReloader
+INFO 2023-10-12 16:01:38,023 basehttp 6980 1192 "GET /admin/ HTTP/1.1" 200 17568
+INFO 2023-10-12 16:03:30,843 autoreload 6980 9944 D:\DjangoProject\homework_project\hw2_app\admin.py changed, reloading.
+INFO 2023-10-12 16:03:31,399 autoreload 10728 11604 Watching for file changes with StatReloader
+INFO 2023-10-12 16:06:18,069 autoreload 10728 11604 D:\DjangoProject\homework_project\hw2_app\admin.py changed, reloading.
+INFO 2023-10-12 16:06:18,611 autoreload 13884 15248 Watching for file changes with StatReloader
+INFO 2023-10-12 16:07:30,734 autoreload 13884 15248 D:\DjangoProject\homework_project\hw2_app\admin.py changed, reloading.
+INFO 2023-10-12 16:07:31,326 autoreload 8548 12240 Watching for file changes with StatReloader
+INFO 2023-10-12 16:08:01,994 autoreload 8548 12240 D:\DjangoProject\homework_project\hw2_app\admin.py changed, reloading.
+INFO 2023-10-12 16:08:02,584 autoreload 10728 14960 Watching for file changes with StatReloader
+INFO 2023-10-12 16:08:04,061 basehttp 10728 9352 "GET /admin/ HTTP/1.1" 200 17568
+INFO 2023-10-12 16:08:08,535 basehttp 10728 9352 "GET /admin/hw2_app/customer/ HTTP/1.1" 200 22332
+INFO 2023-10-12 16:08:08,574 basehttp 10728 9352 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:08:27,299 autoreload 10728 14960 D:\DjangoProject\homework_project\hw2_app\admin.py changed, reloading.
+INFO 2023-10-12 16:08:27,902 autoreload 7308 1312 Watching for file changes with StatReloader
+INFO 2023-10-12 16:08:59,929 autoreload 7308 1312 D:\DjangoProject\homework_project\hw2_app\admin.py changed, reloading.
+INFO 2023-10-12 16:09:00,678 autoreload 3320 3308 Watching for file changes with StatReloader
+INFO 2023-10-12 16:09:06,645 basehttp 3320 14412 "GET /admin/hw2_app/customer/ HTTP/1.1" 200 22333
+INFO 2023-10-12 16:09:06,677 basehttp 3320 14412 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:14:15,457 autoreload 3320 3308 D:\DjangoProject\homework_project\hw2_app\models.py changed, reloading.
+INFO 2023-10-12 16:14:16,072 autoreload 14760 9516 Watching for file changes with StatReloader
+INFO 2023-10-12 16:14:26,147 basehttp 14760 6656 "GET /admin/hw2_app/customer/ HTTP/1.1" 200 22398
+INFO 2023-10-12 16:14:26,179 basehttp 14760 6656 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:15:32,663 autoreload 14760 9516 D:\DjangoProject\homework_project\hw2_app\models.py changed, reloading.
+INFO 2023-10-12 16:15:33,215 autoreload 12932 9320 Watching for file changes with StatReloader
+INFO 2023-10-12 16:15:34,844 basehttp 12932 2980 "GET /admin/hw2_app/customer/ HTTP/1.1" 200 22398
+INFO 2023-10-12 16:15:34,863 basehttp 12932 5456 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2023-10-12 16:15:34,864 basehttp 12932 13664 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2023-10-12 16:15:34,885 basehttp 12932 2980 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:15:34,908 basehttp 12932 2980 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2023-10-12 16:15:34,915 basehttp 12932 2980 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2023-10-12 16:16:04,216 autoreload 12932 9320 D:\DjangoProject\homework_project\hw2_app\models.py changed, reloading.
+INFO 2023-10-12 16:16:04,863 autoreload 11016 15008 Watching for file changes with StatReloader
+INFO 2023-10-12 16:16:07,270 basehttp 11016 1388 "GET /admin/hw2_app/customer/ HTTP/1.1" 200 22398
+INFO 2023-10-12 16:16:07,303 basehttp 11016 1388 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:16:13,470 basehttp 11016 1388 "GET /admin/hw2_app/customer/?o=1 HTTP/1.1" 200 22891
+INFO 2023-10-12 16:16:13,501 basehttp 11016 1388 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:16:15,819 basehttp 11016 1388 "GET /admin/hw2_app/customer/?o=2.1 HTTP/1.1" 200 23393
+INFO 2023-10-12 16:16:15,852 basehttp 11016 1388 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:16:20,643 basehttp 11016 1388 "GET /admin/hw2_app/customer/?o=-2.1 HTTP/1.1" 200 23407
+INFO 2023-10-12 16:16:20,675 basehttp 11016 1388 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:16:22,493 basehttp 11016 1388 "GET /admin/hw2_app/customer/?o=-2.-1 HTTP/1.1" 200 23421
+INFO 2023-10-12 16:16:22,527 basehttp 11016 1388 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:16:24,348 basehttp 11016 1388 "GET /admin/hw2_app/customer/?o=1.-2 HTTP/1.1" 200 23407
+INFO 2023-10-12 16:16:24,377 basehttp 11016 1388 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:16:25,624 basehttp 11016 1388 "GET /admin/hw2_app/customer/?o=2.1 HTTP/1.1" 200 23393
+INFO 2023-10-12 16:16:25,656 basehttp 11016 1388 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:16:26,530 basehttp 11016 1388 "GET /admin/hw2_app/customer/?o=-1.2 HTTP/1.1" 200 23407
+INFO 2023-10-12 16:16:26,562 basehttp 11016 1388 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:16:29,037 basehttp 11016 1388 "GET /admin/hw2_app/customer/?o=-1.-2 HTTP/1.1" 200 23421
+INFO 2023-10-12 16:16:29,069 basehttp 11016 1388 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:16:29,759 basehttp 11016 1388 "GET /admin/hw2_app/customer/?o=-1.2 HTTP/1.1" 200 23407
+INFO 2023-10-12 16:16:29,789 basehttp 11016 1388 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:16:36,699 basehttp 11016 1388 "GET /admin/hw2_app/customer/?o=2 HTTP/1.1" 200 22891
+INFO 2023-10-12 16:16:36,738 basehttp 11016 1388 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:16:39,867 basehttp 11016 1388 "GET /admin/hw2_app/customer/?o= HTTP/1.1" 200 22575
+INFO 2023-10-12 16:16:39,902 basehttp 11016 1388 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:16:58,624 autoreload 11016 15008 D:\DjangoProject\homework_project\hw2_app\models.py changed, reloading.
+INFO 2023-10-12 16:16:59,214 autoreload 10180 12196 Watching for file changes with StatReloader
+INFO 2023-10-12 16:17:01,258 basehttp 10180 14456 "GET /admin/hw2_app/customer/?o= HTTP/1.1" 200 22576
+INFO 2023-10-12 16:17:01,289 basehttp 10180 14456 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:19:31,814 autoreload 10180 12196 D:\DjangoProject\homework_project\hw2_app\admin.py changed, reloading.
+INFO 2023-10-12 16:19:32,350 autoreload 10520 3992 Watching for file changes with StatReloader
+INFO 2023-10-12 16:28:02,178 autoreload 10520 3992 D:\DjangoProject\homework_project\hw2_app\models.py changed, reloading.
+INFO 2023-10-12 16:28:04,053 autoreload 12560 9032 Watching for file changes with StatReloader
+INFO 2023-10-12 16:28:33,208 autoreload 6408 4936 Watching for file changes with StatReloader
+INFO 2023-10-12 16:30:32,989 autoreload 6408 4936 D:\DjangoProject\homework_project\hw2_app\admin.py changed, reloading.
+INFO 2023-10-12 16:30:33,555 autoreload 5164 9948 Watching for file changes with StatReloader
+INFO 2023-10-12 16:30:35,978 basehttp 5164 14492 "GET /admin/hw2_app/customer/?o= HTTP/1.1" 200 22576
+INFO 2023-10-12 16:30:36,020 basehttp 5164 14492 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:30:40,773 basehttp 5164 14492 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23510
+INFO 2023-10-12 16:30:40,809 basehttp 5164 14492 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:31:24,107 autoreload 5164 9948 D:\DjangoProject\homework_project\hw2_app\models.py changed, reloading.
+INFO 2023-10-12 16:31:24,713 autoreload 14436 4272 Watching for file changes with StatReloader
+INFO 2023-10-12 16:31:26,728 basehttp 14436 14400 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23371
+INFO 2023-10-12 16:31:26,758 basehttp 14436 14400 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:31:53,373 basehttp 14436 14400 "GET /admin/hw2_app/order/31/change/ HTTP/1.1" 200 24183
+INFO 2023-10-12 16:31:53,385 basehttp 14436 14400 "GET /static/admin/css/forms.css HTTP/1.1" 200 9047
+INFO 2023-10-12 16:31:53,394 basehttp 14436 10820 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2023-10-12 16:31:53,394 basehttp 14436 14400 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2023-10-12 16:31:53,395 basehttp 14436 3432 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11900
+INFO 2023-10-12 16:31:53,403 basehttp 14436 3432 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2023-10-12 16:31:53,416 basehttp 14436 14788 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:31:53,439 basehttp 14436 14788 "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 200 280
+INFO 2023-10-12 16:33:02,597 basehttp 14436 14788 "GET /admin/r/9/31/ HTTP/1.1" 302 0
+INFO 2023-10-12 16:33:02,624 basehttp 14436 14788 "GET /shop/order/31/ HTTP/1.1" 200 11984
+INFO 2023-10-12 16:33:10,640 basehttp 14436 14788 "GET /admin/hw2_app/order/31/change/ HTTP/1.1" 200 24183
+INFO 2023-10-12 16:35:08,030 basehttp 14436 14788 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23370
+INFO 2023-10-12 16:35:08,063 basehttp 14436 14788 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:35:16,466 basehttp 14436 14788 "GET /admin/hw2_app/customer/ HTTP/1.1" 200 22397
+INFO 2023-10-12 16:35:16,500 basehttp 14436 14788 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:35:18,674 basehttp 14436 14788 "GET /admin/hw2_app/customer/6/change/ HTTP/1.1" 200 21527
+INFO 2023-10-12 16:35:18,708 basehttp 14436 14788 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:35:37,330 basehttp 14436 14788 "GET /admin/hw2_app/product/ HTTP/1.1" 200 25119
+INFO 2023-10-12 16:35:37,362 basehttp 14436 14788 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:36:17,787 basehttp 14436 14788 "GET /admin/hw2_app/product/4/change/ HTTP/1.1" 200 22149
+INFO 2023-10-12 16:36:17,823 basehttp 14436 14788 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:36:54,287 basehttp 14436 14788 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23370
+INFO 2023-10-12 16:36:54,310 basehttp 14436 14772 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2023-10-12 16:36:54,310 basehttp 14436 644 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2023-10-12 16:36:54,329 basehttp 14436 14788 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:36:54,347 basehttp 14436 14788 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2023-10-12 16:36:54,353 basehttp 14436 14788 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2023-10-12 16:37:27,161 basehttp 14436 14788 "GET /admin/hw2_app/product/ HTTP/1.1" 200 25119
+INFO 2023-10-12 16:37:27,193 basehttp 14436 14788 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:37:38,776 basehttp 14436 14788 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23370
+INFO 2023-10-12 16:37:38,810 basehttp 14436 14788 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:38:57,554 autoreload 14436 4272 D:\DjangoProject\homework_project\hw2_app\models.py changed, reloading.
+INFO 2023-10-12 16:38:58,166 autoreload 11664 13692 Watching for file changes with StatReloader
+INFO 2023-10-12 16:38:59,851 basehttp 11664 11832 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23040
+INFO 2023-10-12 16:38:59,882 basehttp 11664 11832 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:39:03,403 basehttp 11664 11832 "GET /admin/hw2_app/customer/ HTTP/1.1" 200 22397
+INFO 2023-10-12 16:39:03,435 basehttp 11664 11832 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:39:07,983 basehttp 11664 11832 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23039
+INFO 2023-10-12 16:39:08,017 basehttp 11664 11832 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:39:16,216 basehttp 11664 11832 "GET /admin/hw2_app/order/31/change/ HTTP/1.1" 200 23890
+INFO 2023-10-12 16:39:16,248 basehttp 11664 11832 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:46:12,904 basehttp 11664 6892 "GET /admin/hw2_app/customer/ HTTP/1.1" 200 22397
+INFO 2023-10-12 16:46:12,942 basehttp 11664 6892 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:46:21,425 basehttp 11664 6892 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23039
+INFO 2023-10-12 16:46:21,456 basehttp 11664 6892 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:46:26,169 basehttp 11664 6892 "GET /admin/hw2_app/customer/ HTTP/1.1" 200 22397
+INFO 2023-10-12 16:46:26,204 basehttp 11664 6892 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:46:28,182 basehttp 11664 6892 "GET /admin/hw2_app/product/ HTTP/1.1" 200 25119
+INFO 2023-10-12 16:46:28,215 basehttp 11664 6892 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:46:35,404 basehttp 11664 6892 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23039
+INFO 2023-10-12 16:46:35,442 basehttp 11664 6892 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:46:40,261 basehttp 11664 6892 "GET /admin/hw2_app/customer/ HTTP/1.1" 200 22397
+INFO 2023-10-12 16:46:40,295 basehttp 11664 6892 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:46:41,615 basehttp 11664 6892 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23039
+INFO 2023-10-12 16:46:41,648 basehttp 11664 6892 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:46:42,749 basehttp 11664 6892 "GET /admin/hw2_app/order/31/change/ HTTP/1.1" 200 23890
+INFO 2023-10-12 16:46:42,784 basehttp 11664 6892 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:46:58,367 basehttp 11664 6892 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23039
+INFO 2023-10-12 16:46:58,404 basehttp 11664 6892 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 16:51:21,327 basehttp 11664 6892 "GET /admin/hw2_app/order/27/change/ HTTP/1.1" 200 23897
+INFO 2023-10-12 16:51:21,360 basehttp 11664 6892 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:07:07,205 basehttp 11664 10688 "GET /admin/hw2_app/product/add/?_to_field=id&_popup=1 HTTP/1.1" 200 16888
+INFO 2023-10-12 17:07:07,224 basehttp 11664 13512 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2023-10-12 17:07:07,224 basehttp 11664 10728 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2023-10-12 17:07:07,244 basehttp 11664 10688 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:07:07,264 basehttp 11664 10688 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2023-10-12 17:07:07,274 basehttp 11664 10688 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2023-10-12 17:07:40,718 basehttp 11664 10688 "POST /admin/hw2_app/order/27/change/ HTTP/1.1" 302 0
+INFO 2023-10-12 17:07:40,756 basehttp 11664 10688 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23439
+INFO 2023-10-12 17:07:40,791 basehttp 11664 10688 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:07:44,518 basehttp 11664 10688 "GET /admin/hw2_app/order/31/change/ HTTP/1.1" 200 23890
+INFO 2023-10-12 17:07:44,550 basehttp 11664 10688 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:07:48,753 basehttp 11664 10688 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23039
+INFO 2023-10-12 17:07:48,785 basehttp 11664 10688 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:07:50,098 basehttp 11664 10688 "GET /admin/hw2_app/order/30/change/ HTTP/1.1" 200 23890
+INFO 2023-10-12 17:07:50,130 basehttp 11664 10688 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:08:09,482 basehttp 11664 10688 "GET /admin/hw2_app/customer/ HTTP/1.1" 200 22397
+INFO 2023-10-12 17:08:09,519 basehttp 11664 10688 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:13:13,472 basehttp 11664 14732 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23039
+INFO 2023-10-12 17:13:13,507 basehttp 11664 14732 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:13:15,083 basehttp 11664 14732 "GET /admin/hw2_app/customer/ HTTP/1.1" 200 22397
+INFO 2023-10-12 17:13:15,117 basehttp 11664 14732 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:14:17,498 autoreload 11664 13692 D:\DjangoProject\homework_project\hw2_app\models.py changed, reloading.
+INFO 2023-10-12 17:14:18,143 autoreload 6672 12816 Watching for file changes with StatReloader
+INFO 2023-10-12 17:14:19,668 basehttp 6672 4360 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23040
+INFO 2023-10-12 17:14:19,703 basehttp 6672 4360 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:14:21,745 basehttp 6672 4360 "GET /admin/hw2_app/order/31/change/ HTTP/1.1" 200 23666
+INFO 2023-10-12 17:14:21,779 basehttp 6672 4360 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:17:00,118 autoreload 6672 12816 D:\DjangoProject\homework_project\hw2_app\models.py changed, reloading.
+INFO 2023-10-12 17:17:00,873 autoreload 2700 13892 Watching for file changes with StatReloader
+INFO 2023-10-12 17:17:02,159 basehttp 2700 13544 "GET /admin/hw2_app/order/31/change/ HTTP/1.1" 200 23533
+INFO 2023-10-12 17:17:02,201 basehttp 2700 13544 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:18:05,814 autoreload 2700 13892 D:\DjangoProject\homework_project\hw2_app\admin.py changed, reloading.
+INFO 2023-10-12 17:18:06,387 autoreload 14604 9952 Watching for file changes with StatReloader
+INFO 2023-10-12 17:18:08,106 basehttp 14604 14368 "GET /admin/hw2_app/order/31/change/ HTTP/1.1" 200 23533
+INFO 2023-10-12 17:18:08,139 basehttp 14604 14368 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:18:10,347 basehttp 14604 14368 "GET /admin/hw2_app/order/31/change/ HTTP/1.1" 200 23532
+INFO 2023-10-12 17:18:10,378 basehttp 14604 14368 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:18:15,267 basehttp 14604 14368 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23436
+INFO 2023-10-12 17:18:15,299 basehttp 14604 14368 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:18:19,855 basehttp 14604 14368 "GET /admin/hw2_app/order/31/change/ HTTP/1.1" 200 23532
+INFO 2023-10-12 17:18:19,890 basehttp 14604 14368 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:21:25,924 basehttp 14604 14368 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23436
+INFO 2023-10-12 17:21:25,959 basehttp 14604 14368 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:21:31,758 basehttp 14604 14368 "GET /admin/hw2_app/order/31/change/ HTTP/1.1" 200 23532
+INFO 2023-10-12 17:21:31,797 basehttp 14604 14368 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:21:45,337 basehttp 14604 14368 "GET /admin/hw2_app/customer/2/change/?_to_field=id HTTP/1.1" 200 21490
+INFO 2023-10-12 17:21:45,371 basehttp 14604 14368 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:21:49,732 basehttp 14604 14368 "GET /admin/hw2_app/order/31/change/ HTTP/1.1" 200 23532
+INFO 2023-10-12 17:22:03,809 basehttp 14604 14368 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23436
+INFO 2023-10-12 17:22:03,842 basehttp 14604 14368 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:22:23,961 autoreload 14604 9952 D:\DjangoProject\homework_project\hw2_app\admin.py changed, reloading.
+INFO 2023-10-12 17:22:24,555 autoreload 14836 14468 Watching for file changes with StatReloader
+INFO 2023-10-12 17:22:26,083 basehttp 14836 14992 "GET /admin/hw2_app/order/ HTTP/1.1" 200 23452
+INFO 2023-10-12 17:22:26,117 basehttp 14836 14992 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:27:59,701 basehttp 14836 14588 "GET /admin/hw2_app/customer/ HTTP/1.1" 200 22397
+INFO 2023-10-12 17:27:59,735 basehttp 14836 14588 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:31:08,246 basehttp 14836 14588 "GET /admin/hw2_app/customer/6/change/ HTTP/1.1" 200 21428
+INFO 2023-10-12 17:31:08,285 basehttp 14836 14588 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:31:12,938 basehttp 14836 14588 "GET /admin/hw2_app/customer/ HTTP/1.1" 200 22397
+INFO 2023-10-12 17:31:12,972 basehttp 14836 14588 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:31:26,562 basehttp 14836 14588 "GET /admin/hw2_app/product/ HTTP/1.1" 200 25119
+INFO 2023-10-12 17:31:26,594 basehttp 14836 14588 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:34:54,987 autoreload 14836 14468 D:\DjangoProject\homework_project\hw2_app\admin.py changed, reloading.
+INFO 2023-10-12 17:34:55,527 autoreload 10752 9952 Watching for file changes with StatReloader
+INFO 2023-10-12 17:35:29,641 autoreload 10752 9952 D:\DjangoProject\homework_project\hw2_app\admin.py changed, reloading.
+INFO 2023-10-12 17:35:30,209 autoreload 10264 4064 Watching for file changes with StatReloader
+INFO 2023-10-12 17:35:31,480 basehttp 10264 8632 "GET /admin/hw2_app/product/ HTTP/1.1" 200 23823
+INFO 2023-10-12 17:35:31,496 basehttp 10264 12916 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2023-10-12 17:35:31,498 basehttp 10264 10960 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2023-10-12 17:35:31,519 basehttp 10264 8632 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:35:31,538 basehttp 10264 8632 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2023-10-12 17:35:31,547 basehttp 10264 8632 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2023-10-12 17:35:37,549 basehttp 10264 8632 "GET /admin/hw2_app/product/?p=2 HTTP/1.1" 200 23903
+INFO 2023-10-12 17:35:37,580 basehttp 10264 8632 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:35:38,729 basehttp 10264 8632 "GET /admin/hw2_app/product/?p=3 HTTP/1.1" 200 23749
+INFO 2023-10-12 17:35:38,764 basehttp 10264 8632 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:35:41,448 basehttp 10264 8632 "GET /admin/hw2_app/product/?p=1 HTTP/1.1" 200 23930
+INFO 2023-10-12 17:35:41,479 basehttp 10264 8632 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:35:43,634 basehttp 10264 8632 "GET /admin/hw2_app/product/?p=2 HTTP/1.1" 200 23903
+INFO 2023-10-12 17:35:43,669 basehttp 10264 8632 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:35:46,175 basehttp 10264 8632 "GET /admin/hw2_app/customer/ HTTP/1.1" 200 21782
+INFO 2023-10-12 17:35:46,205 basehttp 10264 8632 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:35:49,412 basehttp 10264 8632 "GET /admin/hw2_app/customer/?p=2 HTTP/1.1" 200 21869
+INFO 2023-10-12 17:35:49,448 basehttp 10264 8632 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:35:50,992 basehttp 10264 8632 "GET /admin/hw2_app/product/ HTTP/1.1" 200 23822
+INFO 2023-10-12 17:35:51,028 basehttp 10264 8632 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:37:18,098 basehttp 10264 8632 "GET /admin/hw2_app/customer/ HTTP/1.1" 200 21782
+INFO 2023-10-12 17:37:18,134 basehttp 10264 8632 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-12 17:37:36,168 basehttp 10264 8632 "GET /admin/hw2_app/product/ HTTP/1.1" 200 23822
+INFO 2023-10-12 17:37:36,199 basehttp 10264 8632 "GET /admin/jsi18n/ HTTP/1.1" 200 16066

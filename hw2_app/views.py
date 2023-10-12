@@ -54,7 +54,7 @@ class CustomerProductsView(TemplateView):
         context['days'] = days
         orders = Order.objects.filter(customer=customer,
                                       order_date__gte=(timezone.now() - timezone.timedelta(days=days))).all()
-        products = [product for order in orders for product in order.products.all()]
+        products = [product for order in orders.prefetch_related('products') for product in order.products.all()]
         context['products'] = set(products)
         return context
 
