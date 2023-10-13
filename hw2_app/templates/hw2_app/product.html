@@ -12,15 +12,15 @@
     <br>
       <div class="col-lg-6 col-md-8 text-left mx-auto">
           <br>
-          <h2 class="fw-light">Наименование товара: {{ product.name }}</h2>
+          <h2 class="fw-light">Наименование: {{ product.name }}</h2>
           <p class="lead text-muted">Описание товара: {{ product.description }}</p>
-          <p class="lead text-muted">Количество: {{ product.quantity }}</p>
+          <p class="lead text-muted">В наличии: {{ product.quantity }} шт.</p>
           <p class="lead text-muted">Цена: {{ product.price }} руб.</p>
-          <p class="lead text-muted">Дата добавления товара: {{ product.date_added }}</p>
-          <p class="lead text-muted">Дата обновления товара: {{ product.update_date }}</p>
+          <p class="lead text-muted">Дата добавления: {{ product.date_added }}</p>
+          <p class="lead text-muted">Дата обновления: {{ product.update_date }}</p>
           <br>
-          <a href="{% url 'update_product' product.pk %}" class="btn btn-primary">Редактировать товар</a>
-          <a href="{% url 'shop' %}" class="btn btn-primary">В Мой магазин</a>
+          <a href="{% url 'update_product' product.pk %}" class="btn btn-primary">Редактировать</a>
+          <a href="{% url 'shop' %}" class="btn btn-primary">Обратно в магазин</a>
       </div>
       <div class="col-lg-6 col-md-8 text-center mx-auto">
           <br>

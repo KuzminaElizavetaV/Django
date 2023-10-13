@@ -11,7 +11,10 @@ class ShopView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['title'] = 'Главная'
+        products = Product.objects.all()
+        context['title'] = 'Магазин'
+        context['greetings'] = 'Добро пожаловать в наш магазин! Приятных вам покупок!'
+        context['products'] = products
         return context
 
 

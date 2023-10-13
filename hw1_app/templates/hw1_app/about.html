@@ -4,10 +4,19 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
+<style>
+   .rounded-img {
+       width: 60%;
+       border-radius: 50%;
+       box-shadow: 0 0 10px rgba(26, 9, 9, 0.4);
+       padding: 0.6em;
+       margin-bottom: 1em;
+   }
+</style>
 <div class="container text-center my-5">
     <div class="row">
         <div class="col-lg-6 col-md-8 mx-auto">
-            <img class="rounded-img" src="{% static 'hw1_app/me.jpg' %}" alt="Тут должно быть мое фото" style="max-height:300px"/>
+            <img class="rounded-img" src="{% static 'hw1_app/img/me.jpg' %}" alt="Тут должно быть мое фото" />
             <h1 class="fw-light">Меня зовут Елизавета</h1>
             <p class="lead text-muted">Я - начинающий разработчик на языке Python</p>
             <a href="{% url 'main' %}" class="btn btn-primary">Назад</a>
