@@ -29,7 +29,7 @@ CSRF_COOKIE_SECURE = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'ekuzmina.pythonanyehere.com',
+    'ekuzmina.pythonanywhere.com',
 ]
 INTERNAL_IPS = ['127.0.0.1']
 
